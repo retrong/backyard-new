@@ -52,6 +52,7 @@ body {
   margin: 0;
   font-family: "Open Sans", sans-serif;
   font-size: 14px;
+  overflow-x: hidden;
 }
 
 a {
@@ -1209,8 +1210,186 @@ Services Details Area CSS
 }
 
 /*================================================
+Government Services Area CSS
+=================================================*/
+
+.featured-government-area .single-gov-box {
+  box-shadow: 0 0 1.35rem rgba(108, 118, 134, 0.3);
+  border-radius: 10px;
+  background-color: #ffffff;
+  padding: 0;
+
+}
+
+.featured-government-area .single-gov-box .icon-letter {
+  background-color: #FCFCFC;
+  height: 150px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-top-left-radius: 10px;
+  border-top-right-radius: 10px;
+}
+
+.featured-government-area .single-gov-box .icon-letter h1 {
+  margin-bottom: 0;
+  font-size: 62px;
+  font-weight: 700;
+  color: #1A1A1A2E;
+}
+
+.featured-government-area .single-gov-box .services-content {
+  padding: 20px 20px;
+  text-align: left;
+}
+
+.featured-government-area .single-gov-box h3 {
+  margin-bottom: 0;
+  padding: 10px 0;
+  font-size: 16px;
+  font-weight: 600;
+  text-align: left;
+}
+
+.featured-government-area .single-gov-box p:hover{
+  color: #1A1A1A;
+}
+
+.featured-government-area .single-gov-box .services-content a {
+  color: #ffffff;
+  background-color: #1A1A1A;
+  font-size: 12px;
+  font-weight: 500;
+  border-radius: 8px;
+  padding: 4px 6px;
+}
+
+/*================================================
+Insights Area CSS
+=================================================*/
+
+.single-blog-post {
+  box-shadow: 0 0 1.35rem rgba(108, 118, 134, 0.3);
+  border-radius: 10px;
+  background-color: #ffffff;
+  padding: 0;
+  height: fit-content;
+}
+
+.single-blog-post .post-content{
+  padding: 20px 20px;
+  text-align: left;
+}
+
+.single-blog-post .post-content h3 {
+  margin-bottom: 0;
+  padding: 10px 0;
+  font-size: 20px;
+  font-weight: 700;
+  text-align: left;
+}
+
+/*================================================
+Contact Area CSS
+=================================================*/
+
+.contact-title {
+  text-align: left;
+  max-width: 670px;
+  margin-bottom: 60px;
+}
+.contact-title span {
+  display: block;
+  color: #074ece;
+  text-transform: uppercase;
+  margin-bottom: 2px;
+  font-weight: 600;
+  font-size: 15px;
+  font-family: "Dosis", sans-serif;
+}
+.contact-title h2 {
+  margin-bottom: 0;
+  font-size: 40px;
+  font-weight: 700;
+}
+.contact-title p {
+  max-width: 520px;
+  margin-bottom: 0;
+  margin-top: 10px;
+}
+
+.contact-info-box {
+    margin-bottom: 30px;
+    display: flex;
+    align-items: center;
+    text-align: left;
+    gap: 20px;
+}
+
+/* .contact-info-box .icon {
+    width: 60px;
+    height: 60px;
+    background: #007bff;
+    color: #fff;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 24px;
+    margin-right: 20px;
+    flex-shrink: 0;
+} */
+
+.contact-info-box h3 {
+    font-size: 18px;
+    font-weight: 600;
+    margin-bottom: 5px;
+}
+
+.contact-info-box p {
+    margin: 0;
+    color: #666;
+    font-size: 14px;
+}
+
+.contact-info-box p a {
+    color: #666;
+    text-decoration: none;
+}
+
+.contact-info-box p a:hover {
+    color: #007bff;
+}
+
+.bt-submit {
+    background-color: #074ece !important;
+    color: #fff !important;
+    border: none;
+    padding: 12px 30px;
+    font-size: 16px;
+    font-weight: 600;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.bt-submit:hover {
+    background-color: #0056b3;
+}
+
+.map-area {
+    margin-top: 0;
+}
+
+.map-area iframe {
+    width: 100%;
+    height: 450px;
+}
+
+/*================================================
 About Area CSS
 =================================================*/
+
 .about-area {
   overflow: hidden;
   position: relative;
