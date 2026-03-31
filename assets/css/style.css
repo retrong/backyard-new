@@ -6791,4 +6791,98 @@ Footer Wrap Area CSS
   z-index: -1;
 }
 
-/* End "Data Analysis Demo CSS, "User Analysis Demo CSS & Data Science Demo CSS" *//*# sourceMappingURL=style.css.map */
+
+/*================================================
+Pricing Area CSS
+=================================================*/
+
+.pricing-table {
+    background: #fff;
+    box-shadow: 0 0 20px rgba(0,0,0,0.08);
+}
+
+.pricing-table thead {
+    background: #007bff;
+    color: #fff;
+}
+
+.pricing-table th, .pricing-table td {
+    padding: 15px;
+    vertical-align: middle;
+}
+
+.pricing-table tbody tr:nth-child(even) {
+    background: #f8f9fa;
+}
+
+.single-pricing-box {
+    background: #fff;
+    padding: 40px 30px;
+    border-radius: 10px;
+    box-shadow: 0 0 30px rgba(0,0,0,0.1);
+    text-align: center;
+    margin-bottom: 30px;
+    transition: all 0.3s;
+}
+
+.single-pricing-box:hover, .single-pricing-box.active {
+    transform: translateY(-10px);
+    box-shadow: 0 10px 40px rgba(0,0,0,0.15);
+}
+
+.pricing-header h3 {
+    font-size: 24px;
+    font-weight: 600;
+    margin-bottom: 10px;
+}
+
+.pricing-header .popular {
+    display: inline-block;
+    background: #28a745;
+    color: #fff;
+    padding: 5px 15px;
+    border-radius: 20px;
+    font-size: 12px;
+}
+
+.single-pricing-box .price {
+    font-size: 18px;
+    margin: 20px 0;
+}
+
+.single-pricing-box .price span {
+    font-size: 36px;
+    font-weight: 700;
+    color: #007bff;
+}
+
+.pricing-features {
+    list-style: none;
+    padding: 0;
+    margin: 30px 0;
+}
+
+.pricing-features li {
+    padding: 10px 0;
+    border-bottom: 1px solid #eee;
+}
+
+.pricing-features li:last-child {
+    border-bottom: none;
+}
+
+.pricing-features li i {
+    color: #28a745;
+    margin-right: 10px;
+}
+
+.price-footer p {
+    margin: 10px 0;
+}
+
+.additional-contact {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
+}
