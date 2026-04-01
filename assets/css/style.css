@@ -1016,6 +1016,7 @@ Featured Services Area CSS
   transition: 0.5s;
   border-radius: 5px;
   padding: 25px;
+  height: 100%;
 }
 .single-services-box .icon {
   margin-bottom: 18px;
@@ -6885,4 +6886,172 @@ Pricing Area CSS
   align-items: center;
   justify-content: center;
   gap: 10px;
+}
+
+/*================================================
+Careers page CSS
+=================================================*/
+
+.careers-area {
+  background-color: #f9f9f9;
+}
+  
+.section-title h2 {
+    font-size: 36px;
+    font-weight: 700;
+    margin-bottom: 50px;
+}
+
+.single-career-box {
+    background-color: #ffffff;
+    border-radius: 8px;
+    padding: 30px 25px;
+    margin-bottom: 30px;
+    transition: all 0.3s ease;
+    border: 1px solid #e8e8e8;
+}
+
+.single-career-box:hover {
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+    transform: translateY(-5px);
+}
+
+.career-icon {
+    width: 60px;
+    height: 60px;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 20px;
+    font-size: 28px;
+    color: #ffffff;
+}
+
+.career-icon.icon-green {
+    background-color: #00c853;
+}
+
+.career-icon.icon-red {
+    background-color: #ff1744;
+}
+
+.career-icon.icon-orange {
+    background-color: #ff6d00;
+}
+
+.career-icon.icon-dark {
+    background-color: #263238;
+}
+
+.career-icon.icon-pink {
+    background-color: #e91e63;
+}
+
+.single-career-box h3 {
+    font-size: 22px;
+    font-weight: 700;
+    margin-bottom: 15px;
+    color: #263238;
+}
+
+.career-meta {
+    margin-bottom: 15px;
+}
+
+.career-tag {
+    display: inline-block;
+    padding: 5px 15px;
+    border-radius: 20px;
+    font-size: 12px;
+    font-weight: 500;
+    margin-right: 8px;
+    margin-bottom: 8px;
+    border: 1px solid #e0e0e0;
+    background-color: #ffffff;
+}
+
+.career-details {
+    margin-bottom: 20px;
+}
+
+.career-details span {
+    color: #666;
+    font-size: 14px;
+    margin-right: 15px;
+}
+
+.career-details span strong {
+    color: #263238;
+}
+
+.apply-btn {
+    width: 100%;
+    padding: 12px 20px;
+    border: 2px solid #263238;
+    background-color: transparent;
+    color: #263238;
+    border-radius: 5px;
+    font-weight: 600;
+    font-size: 14px;
+    transition: all 0.3s ease;
+    cursor: pointer;
+    text-align: center;
+    display: block;
+    text-decoration: none;
+}
+
+.apply-btn:hover {
+    background-color: #263238;
+    color: #ffffff;
+    text-decoration: none;
+}
+
+.pagination-area {
+    margin-top: 30px;
+    text-align: center;
+}
+
+.pagination {
+    display: inline-flex;
+    gap: 10px;
+    justify-content: center;
+}
+
+.pagination a,
+.pagination span {
+    width: 40px;
+    height: 40px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 50%;
+    border: 1px solid #e0e0e0;
+    color: #666;
+    text-decoration: none;
+    transition: all 0.3s ease;
+    font-size: 14px;
+}
+
+.pagination a:hover {
+    background-color: #263238;
+    color: #ffffff;
+    border-color: #263238;
+}
+
+.pagination span.active {
+    background-color: #007bff;
+    color: #ffffff;
+    border-color: #007bff;
+}
+
+@media (max-width: 767px) {
+    .single-career-box {
+        margin-bottom: 20px;
+    }
+    
+    .section-title h2 {
+        font-size: 28px;
+        margin-bottom: 30px;
+    }
 }
