@@ -112,7 +112,7 @@ img {
   max-width: 670px;
   margin-left: auto;
   margin-right: auto;
-  margin-bottom: 60px;
+  margin-bottom: 40px;
 }
 .section-title span {
   display: block;
@@ -131,7 +131,7 @@ img {
 .section-title p {
   max-width: 520px;
   margin-bottom: 0;
-  margin-top: 10px;
+  margin-top: 5px;
   margin-left: auto;
   margin-right: auto;
 }
@@ -382,7 +382,7 @@ Header Area CSS
 }
 
 .top-header {
-  border-bottom: 1px solid #020E37;
+  border-bottom: 1px solid transparent;
   padding-left: 20px;
   padding-right: 20px;
   padding-top: 15px;
@@ -1417,6 +1417,31 @@ About Area CSS
 .about-content p {
   margin-bottom: 0;
   margin-top: 10px;
+}
+
+.about-content ul {
+  padding-left: 0;
+  list-style-type: none;
+  margin-top: 15px;
+  margin-bottom: 0;
+  gap: 8px;
+}
+
+.about-content ul li {
+  position: relative;
+  transition: 0.5s;
+  margin-bottom: 12px;
+  border-radius: 8px;
+  max-width: 500px;
+}
+
+.about-content ul li span {
+  position: relative;
+  color: #57647c;
+  margin-bottom: 8px;
+  padding-left: 22px;
+  font-size: 18px;
+  font-weight: 600;
 }
 
 .about-inner-area {
@@ -4632,6 +4657,32 @@ Contact Area CSS
   font-weight: 700;
 }
 
+/* launch pad form  *****/
+.launchpad-form-label {
+  display: block;
+  margin-bottom: 10px;
+  font-family: "Dosis", sans-serif;
+  font-size: 16px;
+  font-weight: 600;
+  color: #252525;
+  text-align: left;
+}
+.contact-form form select.form-control,
+.contact-form form input[type=file].form-control {
+  padding-left: 15px;
+  padding-right: 15px;
+}
+.contact-form form select.form-control {
+  line-height: 50px;
+}
+.contact-form form input[type=file].form-control {
+  height: auto;
+  padding-top: 12px;
+  padding-bottom: 12px;
+}
+
+/* launchpad form */
+
 .contact-info {
   text-align: center;
   margin-top: 60px;
@@ -6895,12 +6946,6 @@ Careers page CSS
 .careers-area {
   background-color: #f9f9f9;
 }
-  
-.section-title h2 {
-    font-size: 36px;
-    font-weight: 700;
-    margin-bottom: 50px;
-}
 
 .single-career-box {
     background-color: #ffffff;
@@ -7055,3 +7100,196 @@ Careers page CSS
         margin-bottom: 30px;
     }
 }
+
+/* ====================================
+   Testimonials Section
+   ==================================== */
+.testimonials-area {
+    background-color: #ffffff;
+}
+
+.single-testimonials-item {
+    background: #f8f9fa;
+    padding: 30px;
+    border-radius: 8px;
+    box-shadow: 0 2px 15px rgba(0, 0, 0, 0.08);
+    transition: all 0.3s ease;
+    height: 100%;
+    margin-bottom: 30px;
+}
+
+.single-testimonials-item:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 5px 25px rgba(0, 0, 0, 0.12);
+}
+
+.single-testimonials-item .client-info {
+    margin-bottom: 20px;
+}
+
+.single-testimonials-item .client-info h3 {
+    font-size: 18px;
+    font-weight: 600;
+    margin-bottom: 5px;
+    color: #252525;
+}
+
+.single-testimonials-item .client-info span {
+    font-size: 14px;
+    color: #777;
+    display: block;
+}
+
+.single-testimonials-item p {
+    font-size: 15px;
+    line-height: 1.7;
+    color: #666;
+    margin-bottom: 20px;
+    font-style: italic;
+}
+
+.single-testimonials-item .rating {
+    display: flex;
+    gap: 5px;
+}
+
+.single-testimonials-item .rating i {
+    color: #ffa500;
+    font-size: 16px;
+}
+
+/* ====================================
+   FAQ Section
+   ==================================== */
+.faq-area {
+    background-color: #f1f3f6;
+}
+
+.faq-accordion .accordion-item {
+    border: 1px solid #e3e6e9;
+    border-radius: 8px;
+    margin-bottom: 15px;
+    background: #ffffff;
+    overflow: hidden;
+}
+
+.faq-accordion .accordion-button {
+    font-size: 17px;
+    font-weight: 600;
+    color: #252525;
+    padding: 20px 25px;
+    background-color: #ffffff;
+    border: none;
+    text-align: left;
+    transition: all 0.3s ease;
+}
+
+.faq-accordion .accordion-button:not(.collapsed) {
+    background-color: #f8f9fa;
+    color: #0066cc;
+    box-shadow: none;
+}
+
+.faq-accordion .accordion-button:focus {
+    box-shadow: none;
+    border-color: transparent;
+}
+
+.faq-accordion .accordion-button::after {
+    background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 16 16' fill='%230066cc'%3e%3cpath fill-rule='evenodd' d='M1.646 4.646a.5.5 0 0 1 .708 0L8 10.293l5.646-5.647a.5.5 0 0 1 .708.708l-6 6a.5.5 0 0 1-.708 0l-6-6a.5.5 0 0 1 0-.708z'/%3e%3c/svg%3e");
+    flex-shrink: 0;
+    width: 1.25rem;
+    height: 1.25rem;
+    margin-left: auto;
+    transition: transform 0.3s ease;
+}
+
+.faq-accordion .accordion-button:not(.collapsed)::after {
+    transform: rotate(-180deg);
+}
+
+.faq-accordion .accordion-body {
+    padding: 20px 25px;
+    font-size: 15px;
+    line-height: 1.8;
+    color: #666;
+    background-color: #ffffff;
+}
+
+.faq-accordion .accordion-collapse {
+    border-top: 1px solid #e3e6e9;
+}
+
+/* Dark Mode Support */
+.dark-version .single-testimonials-item {
+    background: #1a1a1a;
+    color: #e0e0e0;
+}
+
+.dark-version .single-testimonials-item .client-info h3 {
+    color: #ffffff;
+}
+
+.dark-version .single-testimonials-item .client-info span,
+.dark-version .single-testimonials-item p {
+    color: #b0b0b0;
+}
+
+.dark-version .faq-accordion .accordion-item {
+    background: #1a1a1a;
+    border-color: #333;
+}
+
+.dark-version .faq-accordion .accordion-button {
+    background-color: #1a1a1a;
+    color: #ffffff;
+}
+
+.dark-version .faq-accordion .accordion-button:not(.collapsed) {
+    background-color: #252525;
+    color: #0099ff;
+}
+
+.dark-version .faq-accordion .accordion-body {
+    background-color: #1a1a1a;
+    color: #b0b0b0;
+    border-color: #333;
+}
+
+.dark-version .faq-accordion .accordion-collapse {
+    border-top-color: #333;
+}
+
+/* ====================================
+  Additional Areas Section
+  ==================================== */
+
+  .services-details-content {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .services-details-content h3 {
+    font-size: 28px;
+    font-weight: 600;
+    color: #252525;
+    margin-bottom: 10px;
+  }
+
+  .services-details-content p {
+    font-size: 18px;
+    color: #666;
+    text-align: center;
+    max-width: 800px;
+  }
+
+  .add-ons{
+    display: flex;
+    gap: 0px;
+    width: 100%;
+    justify-content: center;
+    align-items: center;
+  }

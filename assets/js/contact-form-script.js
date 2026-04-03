@@ -3,53 +3,69 @@
 /*==============================================================*/
 (function ($) {
     "use strict"; // Start of use strict
-    $("#contactForm").validator().on("submit", function (event) {
-        if (event.isDefaultPrevented()) {
-            // handle the invalid form...
-            formError();
-            submitMSG(false, "Did you fill in the form properly?");
-        } else {
-            // everything looks good!
-            event.preventDefault();
-            submitForm();
+    bindAjaxForm("#contactForm", "#msgSubmit", "Message Submitted!");
+    bindAjaxForm("#launchpadForm", "#launchpadMsgSubmit", "LaunchPad enquiry submitted!");
+
+    function bindAjaxForm(formSelector, messageSelector, successMessage) {
+        var $form = $(formSelector);
+
+        if (!$form.length) {
+            return;
         }
-    });
-    function submitForm(){
-        // Initiate Variables With Form Content
-        var name = $("#name").val();
-        var email = $("#email").val();
-        var msg_subject = $("#msg_subject").val();
-        var phone_number = $("#phone_number").val();
-        var message = $("#message").val();
-        $.ajax({
-            type: "POST",
-            url: "assets/php/form-process.php",
-            data: "name=" + name + "&email=" + email + "&msg_subject=" + msg_subject + "&phone_number=" + phone_number + "&message=" + message,
-            success : function(statustxt){
-                if (statustxt == "success"){
-                    formSuccess();
-                } else {
-                    formError();
-                    submitMSG(false,statustxt);
-                }
+
+        $form.validator().on("submit", function (event) {
+            if (event.isDefaultPrevented()) {
+                formError($form);
+                submitMSG(messageSelector, false, "Did you fill in the form properly?");
+            } else {
+                event.preventDefault();
+                submitForm($form, messageSelector, successMessage);
             }
         });
     }
-    function formSuccess(){
-        $("#contactForm")[0].reset();
-        submitMSG(true, "Message Submitted!")
+
+    function submitForm($form, messageSelector, successMessage) {
+        var formData = new FormData($form[0]);
+
+        $.ajax({
+            type: "POST",
+            url: "assets/php/form-process.php",
+            data: formData,
+            processData: false,
+            contentType: false,
+            success: function (statustxt) {
+                if (statustxt === "success") {
+                    formSuccess($form, messageSelector, successMessage);
+                } else {
+                    formError($form);
+                    submitMSG(messageSelector, false, statustxt);
+                }
+            },
+            error: function () {
+                formError($form);
+                submitMSG(messageSelector, false, "Something went wrong. Please try again.");
+            }
+        });
     }
-    function formError(){
-        $("#contactForm").removeClass().addClass('shake animated').one('webkitAnimationEnd mozAnimationEnd MSAnimationEnd oanimationend animationend', function(){
+
+    function formSuccess($form, messageSelector, successMessage) {
+        $form[0].reset();
+        submitMSG(messageSelector, true, successMessage);
+    }
+
+    function formError($form) {
+        $form.removeClass().addClass('shake animated').one('webkitAnimationEnd mozAnimationEnd MSAnimationEnd oanimationend animationend', function(){
             $(this).removeClass();
         });
     }
-    function submitMSG(valid, msg){
-        if(valid){
+
+    function submitMSG(messageSelector, valid, msg) {
+        if (valid) {
             var msgClasses = "h4 text-center tada animated text-success";
         } else {
             var msgClasses = "h4 text-center text-danger";
         }
-        $("#msgSubmit").removeClass().addClass(msgClasses).text(msg);
+
+        $(messageSelector).removeClass().addClass(msgClasses).text(msg);
     }
 }(jQuery)); // End of use strict
