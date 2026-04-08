@@ -1737,6 +1737,76 @@ How It Works Area CSS
   padding-bottom: 80px;
 }
 
+.how-work-steps-area {
+  background: #1659c9;
+  border-top: 1px solid rgba(255, 255, 255, 0.18);
+  border-bottom: 1px solid rgba(255, 255, 255, 0.18);
+}
+
+.how-work-steps-wrap {
+  display: grid;
+  grid-template-columns: repeat(4, minmax(0, 1fr));
+}
+
+.how-work-step-item {
+  padding: 32px 24px;
+  text-align: center;
+  border-right: 1px solid rgba(255, 255, 255, 0.18);
+}
+
+.how-work-step-item:first-child {
+  border-left: 1px solid rgba(255, 255, 255, 0.18);
+}
+
+.how-work-step-icon {
+  width: 74px;
+  height: 74px;
+  border-radius: 50%;
+  border: 2px solid rgba(255, 255, 255, 0.9);
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  color: #ffffff;
+  font-size: 31px;
+  margin-bottom: 16px;
+}
+
+.how-work-step-item h3 {
+  color: #ffffff;
+  margin-bottom: 0;
+  font-size: 22px;
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
+}
+
+@media only screen and (max-width: 991px) {
+  .how-work-steps-wrap {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+
+  .how-work-step-item:nth-child(1),
+  .how-work-step-item:nth-child(2) {
+    border-bottom: 1px solid rgba(255, 255, 255, 0.18);
+  }
+}
+
+@media only screen and (max-width: 767px) {
+  .how-work-steps-wrap {
+    grid-template-columns: 1fr;
+  }
+
+  .how-work-step-item,
+  .how-work-step-item:first-child {
+    border-left: none;
+    border-right: none;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.18);
+  }
+
+  .how-work-step-item:last-child {
+    border-bottom: none;
+  }
+}
+
 .single-how-it-work-box {
   margin-bottom: 30px;
   background-color: #f6fdfd;
