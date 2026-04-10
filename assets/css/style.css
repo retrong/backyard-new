@@ -337,7 +337,7 @@ Preloader Area CSS
   width: 60%;
   height: 100%;
   z-index: -1;
-  background: #020E37;
+  background: #074ece;
   transition: 0.9s;
 }
 .preloader::after {
@@ -757,7 +757,7 @@ Header Area CSS
   width: 100%;
   z-index: 999;
   box-shadow: 0 2px 28px 0 rgba(0, 0, 0, 0.06);
-  background: linear-gradient(to right top, #020E37, #020E37, #020E37, #020E37, #020E37) !important;
+  background: linear-gradient(to right top, #074ece, #074ece, #074ece, #074ece, #074ece) !important;
   animation: 500ms ease-in-out 0s normal none 1 running fadeInDown;
   transition: 0.5s;
 }
@@ -2917,7 +2917,7 @@ Page Title Area CSS
   z-index: 1;
   padding-top: 250px;
   padding-bottom: 130px;
-  background-color: #020E37;
+  background-color: #074ece;
   background-image: url(../../assets/img/page-title-bg.png);
   background-position: center center;
   background-size: cover;
@@ -4822,7 +4822,7 @@ Footer Area CSS
   position: relative;
   z-index: 1;
   padding-top: 100px;
-  background-color: #020E37;
+  background-color: #074ece;
 }
 
 .single-footer-widget {
@@ -4950,7 +4950,7 @@ Footer Area CSS
 }
 
 .copyright-area {
-  background-color: #0d1d3b;
+  background-color: #053692;
   margin-top: 70px;
   padding-top: 20px;
   padding-bottom: 20px;
