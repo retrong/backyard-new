@@ -1,0 +1,82 @@
+{
+  "posts": [
+    {
+      "id": 1,
+      "title": "Making The Feast Or Famine Of Freelancing",
+      "excerpt": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod...",
+      "image": "assets/img/blog/blog-1.png",
+      "author": "Admin",
+      "date": "August 15, 2025",
+      "slug": "making-the-feast-or-famine-of-freelancing",
+      "category": "Business",
+      "tags": ["Freelancing", "Business", "Tips"],
+      "featured": true,
+      "fullContent": "<p>It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout...</p>"
+    },
+    {
+      "id": 2,
+      "title": "I Used The Web For A Day On A 50 MB Budget",
+      "excerpt": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod...",
+      "image": "assets/img/blog/blog-2.png",
+      "author": "Admin",
+      "date": "August 15, 2025",
+      "slug": "i-used-the-web-for-a-day-on-50mb-budget",
+      "category": "Technology",
+      "tags": ["Web", "Technology", "Experiment"],
+      "featured": true,
+      "fullContent": "<p>Testing the limits of web browsing with minimal data usage...</p>"
+    },
+    {
+      "id": 3,
+      "title": "Here are the 5 most telling signs of micromanagement",
+      "excerpt": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod...",
+      "image": "assets/img/blog/blog-3.png",
+      "author": "Admin",
+      "date": "August 15, 2025",
+      "slug": "5-signs-of-micromanagement",
+      "category": "Management",
+      "tags": ["Management", "Leadership", "Business"],
+      "featured": true,
+      "fullContent": "<p>Micromanagement can stifle creativity and productivity...</p>"
+    },
+    {
+      "id": 4,
+      "title": "Add And Show Image With Size From Elementor Widget",
+      "excerpt": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod...",
+      "image": "assets/img/blog/blog-2.png",
+      "author": "Admin",
+      "date": "August 15, 2025",
+      "slug": "elementor-widget-image-size",
+      "category": "Development",
+      "tags": ["WordPress", "Elementor", "Tutorial"],
+      "featured": true,
+      "fullContent": "<p>Learn how to properly handle image sizes in custom Elementor widgets...</p>"
+    },
+    {
+      "id": 5,
+      "title": "How To The Active Menu Based On URL In Next.JS?",
+      "excerpt": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod...",
+      "image": "assets/img/blog/blog-2.png",
+      "author": "Admin",
+      "date": "August 15, 2025",
+      "slug": "active-menu-nextjs",
+      "category": "Development",
+      "tags": ["Next.js", "React", "JavaScript"],
+      "featured": true,
+      "fullContent": "<p>Creating dynamic navigation menus in Next.js applications...</p>"
+    },
+    {
+      "id": 6,
+      "title": "Instagram Feed Add To Your WordPress Site",
+      "excerpt": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod...",
+      "image": "assets/img/blog/blog-3.png",
+      "author": "Admin",
+      "date": "August 15, 2025",
+      "slug": "instagram-feed-wordpress",
+      "category": "WordPress",
+      "tags": ["WordPress", "Instagram", "Social Media"],
+      "featured": true,
+      "fullContent": "<p>Integrating Instagram feeds into your WordPress site...</p>"
+    }
+  ]
+}
