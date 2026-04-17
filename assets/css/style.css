@@ -1674,24 +1674,25 @@ Team Area CSS
 .single-team-box .image {
   position: relative;
   overflow: hidden;
+  max-height: 300px;
 }
 .single-team-box .image img {
   transition: 0.5s;
 }
 .single-team-box .image .social {
   position: absolute;
-  top: 50%;
+  bottom: 15px;
   left: 50%;
-  transform: translate(-50%, -50%);
+  transform: translateX(-50%);
   z-index: 2;
   text-decoration: none;
-  opacity: 0;
-  margin-top: 100px;
+  opacity: 1;
   padding: 8px 15px;
   background: #ffffff;
   border-radius: 35px;
-  visibility: hidden;
-  transition: 0.5s;
+  visibility: visible;
+  transition: none;
+  margin: 0;
 }
 .single-team-box .image .social a {
   display: inline-block;
@@ -1722,12 +1723,50 @@ Team Area CSS
   transform: translateY(-5px);
 }
 .single-team-box:hover .image img {
-  transform: scale(1.2);
+  transform: scale(1.05);
 }
-.single-team-box:hover .image .social {
-  opacity: 1;
-  margin-top: 0;
-  visibility: visible;
+
+/* Team Carousel Styling */
+.team-slides.owl-theme .owl-nav {
+  margin-top: 30px;
+}
+.team-slides.owl-theme .owl-nav [class*=owl-] {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  margin: 0;
+  padding: 0;
+  background-color: #074ece;
+  color: #ffffff;
+  width: 45px;
+  height: 45px;
+  line-height: 45px;
+  border-radius: 50%;
+  font-size: 20px;
+  transition: 0.5s;
+}
+.team-slides.owl-theme .owl-nav [class*=owl-]:hover {
+  background-color: #4ac728;
+  color: #ffffff;
+}
+.team-slides.owl-theme .owl-nav .owl-prev {
+  left: -60px;
+}
+.team-slides.owl-theme .owl-nav .owl-next {
+  right: -60px;
+}
+.team-slides.owl-theme .owl-dots {
+  margin-top: 30px;
+}
+.team-slides.owl-theme .owl-dots .owl-dot span {
+  width: 12px;
+  height: 12px;
+  margin: 0 5px;
+  background-color: #d2d2d2;
+  transition: 0.5s;
+}
+.team-slides.owl-theme .owl-dots .owl-dot.active span, .team-slides.owl-theme .owl-dots .owl-dot:hover span {
+  background-color: #4ac728;
 }
 
 /*================================================
@@ -7524,7 +7563,11 @@ Yarders/Careers Page CSS
 
 .step-item.active {
   background: #1e5bff;
-  color: white;
+  color: #ffffff;
+}
+
+.step-item.active p {
+  color: #ffffff;
 }
 
 .step-item.inactive {

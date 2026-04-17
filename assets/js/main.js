@@ -143,6 +143,35 @@
         }
     });
 
+    // Team Slides
+    $('.team-slides').owlCarousel({
+        loop: true,
+        nav: true,
+        dots: true,
+        autoplayHoverPause: true,
+        autoplay: true,
+        mouseDrag: true,
+        margin: 30,
+        navText: [
+            "<i class='flaticon-arrow-pointing-to-left'></i>",
+            "<i class='flaticon-arrow-pointing-to-right'></i>"
+        ],
+        responsive: {
+            0: {
+                items: 1,
+            },
+            576: {
+                items: 2,
+            },
+            768: {
+                items: 3,
+            },
+            1200: {
+                items: 4,
+            },
+        }
+    });
+
     // Tabs
     (function ($) {
         $('.tab ul.tabs').addClass('active').find('> li:eq(0)').addClass('current');
