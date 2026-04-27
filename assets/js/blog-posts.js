@@ -3,10 +3,10 @@ const blogPosts = [
     {
         id: 1,
         title: "Making The Feast Or Famine Of Freelancing",
-        excerpt: "Making ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod...",
+        excerpt: "Making the feast or famine of freelancing work for you is all about finding the right balance. Here are some tips to help you...",
         image: "assets/img/blog/blog-1.png",
         author: "Admin",
-        date: "August 15, 2025",
+        date: "August 10, 2025",
         slug: "making-the-feast-or-famine-of-freelancing",
         category: "Business",
         featured: true
@@ -14,10 +14,10 @@ const blogPosts = [
     {
         id: 2,
         title: "I Used The Web For A Day On A 50 MB Budget",
-        excerpt: "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod...",
+        excerpt: "Using the web on a limited 50 MB budget can be challenging. Here are some strategies to make the most of it...",
         image: "assets/img/blog/blog-2.png",
         author: "Admin",
-        date: "August 15, 2025",
+        date: "August 13, 2025",
         slug: "i-used-the-web-for-a-day-on-50mb-budget",
         category: "Technology",
         featured: true
@@ -25,7 +25,7 @@ const blogPosts = [
     {
         id: 3,
         title: "Here are the 5 most telling signs of micromanagement",
-        excerpt: "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod...",
+        excerpt: "Micromanagement can hinder productivity and morale. Here are five signs that indicate micromanagement...",
         image: "assets/img/blog/blog-3.png",
         author: "Admin",
         date: "August 15, 2025",
@@ -36,7 +36,7 @@ const blogPosts = [
     {
         id: 4,
         title: "Add And Show Image With Size From Elementor Widget",
-        excerpt: "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod...",
+        excerpt: "Learn how to add and display images with specific sizes using the Elementor widget. This guide will help you...",
         image: "assets/img/blog/blog-2.png",
         author: "Admin",
         date: "August 15, 2025",
@@ -47,10 +47,10 @@ const blogPosts = [
     {
         id: 5,
         title: "How To The Active Menu Based On URL In Next.JS?",
-        excerpt: "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod...",
+        excerpt: "Learn how to activate the menu based on the current URL in Next.js. This guide will ...",
         image: "assets/img/blog/blog-2.png",
         author: "Admin",
-        date: "August 15, 2025",
+        date: "August 17, 2025",
         slug: "active-menu-nextjs",
         category: "Development",
         featured: true
@@ -58,10 +58,10 @@ const blogPosts = [
     {
         id: 6,
         title: "Instagram Feed Add To Your WordPress Site",
-        excerpt: "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod...",
+        excerpt: "Learn how to add an Instagram feed to your WordPress site. This guide will help you integrate social media content seamlessly...",
         image: "assets/img/blog/blog-3.png",
         author: "Admin",
-        date: "August 15, 2025",
+        date: "August 20, 2025",
         slug: "instagram-feed-wordpress",
         category: "WordPress",
         featured: true
