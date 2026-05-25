@@ -1150,6 +1150,7 @@ Services Details Area CSS
   padding-left: 0;
   margin-bottom: 0;
   margin-top: 25px;
+  width: 100%;
 }
 .services-details-overview .services-details-desc .services-details-accordion .accordion .accordion-item {
   display: block;
@@ -7807,4 +7808,9 @@ Yarders/Careers Page CSS
     padding: 15px 30px;
     font-size: 15px;
   }
+}
+
+
+.single-features-box{
+  padding: 10px 0px;
 }
