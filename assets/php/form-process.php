@@ -1,5 +1,26 @@
 <?php
 
+// Prevent multiple executions - exit immediately if already run
+if (defined('FORM_PROCESS_EXECUTED')) {
+    exit;
+}
+define('FORM_PROCESS_EXECUTED', true);
+
+// Don't display raw PHP errors to users
+ini_set('display_errors', '0');
+error_reporting(E_ALL);
+ini_set('log_errors', '1');
+
+// Check if vendor/autoload exists
+if (!file_exists(__DIR__ . '/vendor/autoload.php')) {
+    echo "Configuration error. Please run: composer install";
+    error_log("Resend PHP SDK not installed");
+    exit;
+}
+
+require_once __DIR__ . '/vendor/autoload.php';
+require_once __DIR__ . '/.env.php';
+
 function get_post_value($key)
 {
     return trim((string) ($_POST[$key] ?? ""));
@@ -86,19 +107,307 @@ function handle_logo_upload(&$errors)
     return "assets/php/uploads/launchpad-logos/" . $fileName;
 }
 
+function createContactFormEmail($data)
+{
+    return '
+<!DOCTYPE html>
+<html>
+<head>
+    <style>
+        body { font-family: Arial, sans-serif; line-height: 1.6; color: #333; }
+        .container { max-width: 600px; margin: 0 auto; padding: 20px; }
+        .header { background-color: #1e40af; color: white; padding: 20px; text-align: center; }
+        .content { background-color: #f9fafb; padding: 20px; margin-top: 20px; }
+        .field { margin-bottom: 15px; }
+        .label { font-weight: bold; color: #1e40af; }
+        .value { margin-top: 5px; }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="header">
+            <h2>New Contact Form Submission</h2>
+        </div>
+        <div class="content">
+            <div class="field">
+                <div class="label">Name:</div>
+                <div class="value">' . htmlspecialchars($data['name']) . '</div>
+            </div>
+            <div class="field">
+                <div class="label">Email:</div>
+                <div class="value">' . htmlspecialchars($data['email']) . '</div>
+            </div>
+            <div class="field">
+                <div class="label">Phone:</div>
+                <div class="value">' . htmlspecialchars($data['phone_number']) . '</div>
+            </div>
+            <div class="field">
+                <div class="label">Subject:</div>
+                <div class="value">' . htmlspecialchars($data['msg_subject']) . '</div>
+            </div>
+            <div class="field">
+                <div class="label">Message:</div>
+                <div class="value">' . nl2br(htmlspecialchars($data['message'])) . '</div>
+            </div>
+        </div>
+    </div>
+</body>
+</html>';
+}
+
+function createYarderApplicationEmail($data)
+{
+    return '
+<!DOCTYPE html>
+<html>
+<head>
+    <style>
+        body { font-family: Arial, sans-serif; line-height: 1.6; color: #333; }
+        .container { max-width: 600px; margin: 0 auto; padding: 20px; }
+        .header { background-color: #059669; color: white; padding: 20px; text-align: center; }
+        .content { background-color: #f0fdf4; padding: 20px; margin-top: 20px; }
+        .field { margin-bottom: 15px; }
+        .label { font-weight: bold; color: #059669; }
+        .value { margin-top: 5px; }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="header">
+            <h2>New Yarder Application</h2>
+        </div>
+        <div class="content">
+            <div class="field">
+                <div class="label">Name:</div>
+                <div class="value">' . htmlspecialchars($data['name']) . '</div>
+            </div>
+            <div class="field">
+                <div class="label">Email:</div>
+                <div class="value">' . htmlspecialchars($data['email']) . '</div>
+            </div>
+            <div class="field">
+                <div class="label">Area of Expertise:</div>
+                <div class="value">' . htmlspecialchars($data['expertise']) . '</div>
+            </div>
+            <div class="field">
+                <div class="label">Portfolio/LinkedIn:</div>
+                <div class="value">' . htmlspecialchars($data['portfolio'] ?: 'Not provided') . '</div>
+            </div>
+            <div class="field">
+                <div class="label">Key Skills:</div>
+                <div class="value">' . htmlspecialchars($data['skills']) . '</div>
+            </div>
+            <div class="field">
+                <div class="label">Statement:</div>
+                <div class="value">' . nl2br(htmlspecialchars($data['statement'])) . '</div>
+            </div>
+        </div>
+    </div>
+</body>
+</html>';
+}
+
+function createInvestorFormEmail($data)
+{
+    return '
+<!DOCTYPE html>
+<html>
+<head>
+    <style>
+        body { font-family: Arial, sans-serif; line-height: 1.6; color: #333; }
+        .container { max-width: 600px; margin: 0 auto; padding: 20px; }
+        .header { background-color: #7c3aed; color: white; padding: 20px; text-align: center; }
+        .content { background-color: #faf5ff; padding: 20px; margin-top: 20px; }
+        .field { margin-bottom: 15px; }
+        .label { font-weight: bold; color: #7c3aed; }
+        .value { margin-top: 5px; }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="header">
+            <h2>New MHINO CareOS Enquiry</h2>
+        </div>
+        <div class="content">
+            <div class="field">
+                <div class="label">Name:</div>
+                <div class="value">' . htmlspecialchars($data['name']) . '</div>
+            </div>
+            <div class="field">
+                <div class="label">Email:</div>
+                <div class="value">' . htmlspecialchars($data['email']) . '</div>
+            </div>
+            <div class="field">
+                <div class="label">Phone:</div>
+                <div class="value">' . htmlspecialchars($data['phone'] ?: 'Not provided') . '</div>
+            </div>
+            <div class="field">
+                <div class="label">Organization:</div>
+                <div class="value">' . htmlspecialchars($data['organization'] ?: 'Not provided') . '</div>
+            </div>
+            <div class="field">
+                <div class="label">Interest Type:</div>
+                <div class="value">' . htmlspecialchars($data['interest_type']) . '</div>
+            </div>
+            <div class="field">
+                <div class="label">Message:</div>
+                <div class="value">' . nl2br(htmlspecialchars($data['message'])) . '</div>
+            </div>
+        </div>
+    </div>
+</body>
+</html>';
+}
+
+function createLaunchpadEmail($data)
+{
+    return '
+<!DOCTYPE html>
+<html>
+<head>
+    <style>
+        body { font-family: Arial, sans-serif; line-height: 1.6; color: #333; }
+        .container { max-width: 600px; margin: 0 auto; padding: 20px; }
+        .header { background-color: #f59e0b; color: white; padding: 20px; text-align: center; }
+        .content { background-color: #fffbeb; padding: 20px; margin-top: 20px; }
+        .field { margin-bottom: 15px; }
+        .label { font-weight: bold; color: #f59e0b; }
+        .value { margin-top: 5px; }
+        .package-badge { display: inline-block; background-color: #f59e0b; color: white; padding: 5px 15px; border-radius: 20px; font-weight: bold; }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="header">
+            <h2>🚀 New LaunchPad Enquiry</h2>
+        </div>
+        <div class="content">
+            <div class="field">
+                <div class="label">Contact Information</div>
+            </div>
+            <div class="field">
+                <div class="label">Name:</div>
+                <div class="value">' . htmlspecialchars($data['name']) . '</div>
+            </div>
+            <div class="field">
+                <div class="label">Email:</div>
+                <div class="value">' . htmlspecialchars($data['email']) . '</div>
+            </div>
+            <div class="field">
+                <div class="label">Phone:</div>
+                <div class="value">' . htmlspecialchars($data['phone_number']) . '</div>
+            </div>
+            
+            <div class="field" style="margin-top: 25px;">
+                <div class="label">Business Details</div>
+            </div>
+            <div class="field">
+                <div class="label">Business Name:</div>
+                <div class="value">' . htmlspecialchars($data['business_name']) . '</div>
+            </div>
+            <div class="field">
+                <div class="label">Package Selected:</div>
+                <div class="value"><span class="package-badge">' . htmlspecialchars($data['package_type']) . '</span></div>
+            </div>
+            <div class="field">
+                <div class="label">Preferred Domain:</div>
+                <div class="value">' . htmlspecialchars($data['domain_name'] ?: 'Not provided') . '</div>
+            </div>
+            <div class="field">
+                <div class="label">Business Type:</div>
+                <div class="value">' . htmlspecialchars($data['business_type'] ?: 'Not provided') . '</div>
+            </div>
+            <div class="field">
+                <div class="label">Current Website/Social:</div>
+                <div class="value">' . htmlspecialchars($data['current_website'] ?: 'Not provided') . '</div>
+            </div>
+            <div class="field">
+                <div class="label">Logo Upload:</div>
+                <div class="value">' . htmlspecialchars($data['logo_path'] ?: 'No file uploaded') . '</div>
+            </div>
+            
+            <div class="field" style="margin-top: 25px;">
+                <div class="label">Project Requirements</div>
+            </div>
+            <div class="field">
+                <div class="label">Business Description:</div>
+                <div class="value">' . nl2br(htmlspecialchars($data['business_description'])) . '</div>
+            </div>
+            <div class="field">
+                <div class="label">Services Needed:</div>
+                <div class="value">' . nl2br(htmlspecialchars($data['services_needed'] ?: 'Not provided')) . '</div>
+            </div>
+            <div class="field">
+                <div class="label">Timeline / Budget / Requirements:</div>
+                <div class="value">' . nl2br(htmlspecialchars($data['timeline_budget'] ?: 'Not provided')) . '</div>
+            </div>
+        </div>
+    </div>
+</body>
+</html>';
+}
+
 $errors = [];
 $formType = get_post_value("form_type");
 $isLaunchpadForm = $formType === "launchpad";
+$isYarderForm = get_post_value("yarder_application") === "1";
+$isInvestorForm = get_post_value("investor_form") === "1";
 
 $name = require_post_value("name", "Name", $errors);
 $email = require_post_value("email", "Email", $errors);
-$phoneNumber = require_post_value("phone_number", "Phone number", $errors);
 
 if ($email !== "" && !filter_var($email, FILTER_VALIDATE_EMAIL)) {
     $errors[] = "Email format is invalid";
 }
 
-if ($isLaunchpadForm) {
+// Initialize Resend client using the installed SDK entrypoint.
+$resend = \Resend::client(RESEND_API_KEY);
+$emailTo = TO_EMAIL;
+$subject = '';
+$htmlBody = '';
+
+// Handle Yarder Application Form
+if ($isYarderForm) {
+    $expertise = require_post_value("expertise", "Expertise", $errors);
+    $skills = require_post_value("skills", "Skills", $errors);
+    $statement = require_post_value("statement", "Statement", $errors);
+    $portfolio = get_post_value("portfolio");
+
+    if (empty($errors)) {
+        $subject = "New Yarder Application: " . $name;
+        $htmlBody = createYarderApplicationEmail([
+            'name' => $name,
+            'email' => $email,
+            'expertise' => $expertise,
+            'portfolio' => $portfolio,
+            'skills' => $skills,
+            'statement' => $statement
+        ]);
+    }
+}
+// Handle Investor/Partner Form
+elseif ($isInvestorForm) {
+    $phone = get_post_value("phone");
+    $organization = get_post_value("organization");
+    $interestType = require_post_value("interest_type", "Interest Type", $errors);
+    $message = require_post_value("message", "Message", $errors);
+
+    if (empty($errors)) {
+        $emailTo = "partner@mhino.co.uk";
+        $subject = "MHINO CareOS Enquiry: " . $interestType . " - " . $name;
+        $htmlBody = createInvestorFormEmail([
+            'name' => $name,
+            'email' => $email,
+            'phone' => $phone,
+            'organization' => $organization,
+            'interest_type' => $interestType,
+            'message' => $message
+        ]);
+    }
+}
+// Handle LaunchPad Form
+elseif ($isLaunchpadForm) {
+    $phoneNumber = require_post_value("phone_number", "Phone number", $errors);
     $businessName = require_post_value("business_name", "Business name", $errors);
     $packageType = require_post_value("package_type", "Package", $errors);
     $businessDescription = require_post_value("business_description", "Business description", $errors);
@@ -115,33 +424,41 @@ if ($isLaunchpadForm) {
 
     $logoPath = handle_logo_upload($errors);
 
-    $emailTo = "launchpad@backyardtech.co.uk";
-    $subject = "New LaunchPad Enquiry";
-    $body = "";
-    $body .= "Name: " . $name . "\n";
-    $body .= "Email: " . $email . "\n";
-    $body .= "Phone Number: " . $phoneNumber . "\n";
-    $body .= "Business Name: " . $businessName . "\n";
-    $body .= "Package: " . $packageType . "\n";
-    $body .= "Preferred Domain: " . ($domainName !== "" ? $domainName : "Not provided") . "\n";
-    $body .= "Business Type: " . ($businessType !== "" ? $businessType : "Not provided") . "\n";
-    $body .= "Current Website or Social Link: " . ($currentWebsite !== "" ? $currentWebsite : "Not provided") . "\n";
-    $body .= "Uploaded Logo Path: " . ($logoPath !== "" ? $logoPath : "No file uploaded") . "\n\n";
-    $body .= "Business Description:\n" . $businessDescription . "\n\n";
-    $body .= "Services Needed:\n" . ($servicesNeeded !== "" ? $servicesNeeded : "Not provided") . "\n\n";
-    $body .= "Timeline / Budget / Special Requirements:\n" . ($timelineBudget !== "" ? $timelineBudget : "Not provided") . "\n";
-} else {
+    if (empty($errors)) {
+        $emailTo = "launchpad@backyardtech.co.uk";
+        $subject = "New LaunchPad Enquiry: " . $businessName . " (" . $packageType . ")";
+        $htmlBody = createLaunchpadEmail([
+            'name' => $name,
+            'email' => $email,
+            'phone_number' => $phoneNumber,
+            'business_name' => $businessName,
+            'package_type' => $packageType,
+            'domain_name' => $domainName,
+            'business_type' => $businessType,
+            'current_website' => $currentWebsite,
+            'logo_path' => $logoPath,
+            'business_description' => $businessDescription,
+            'services_needed' => $servicesNeeded,
+            'timeline_budget' => $timelineBudget
+        ]);
+    }
+}
+// Handle Regular Contact Form
+else {
+    $phoneNumber = require_post_value("phone_number", "Phone number", $errors);
     $msgSubject = require_post_value("msg_subject", "Subject", $errors);
     $message = require_post_value("message", "Message", $errors);
 
-    $emailTo = "contact@backyardtech.co.uk";
-    $subject = "New Message Received";
-    $body = "";
-    $body .= "Name: " . $name . "\n";
-    $body .= "Email: " . $email . "\n";
-    $body .= "Subject: " . $msgSubject . "\n";
-    $body .= "Phone Number: " . $phoneNumber . "\n";
-    $body .= "Message: " . $message . "\n";
+    if (empty($errors)) {
+        $subject = "Contact Form: " . $msgSubject;
+        $htmlBody = createContactFormEmail([
+            'name' => $name,
+            'email' => $email,
+            'phone_number' => $phoneNumber,
+            'msg_subject' => $msgSubject,
+            'message' => $message
+        ]);
+    }
 }
 
 if (!empty($errors)) {
@@ -149,15 +466,19 @@ if (!empty($errors)) {
     exit;
 }
 
-$headers = "Reply-To: " . $email . "\r\n";
-$headers .= "X-Mailer: PHP/" . phpversion();
+// Send email via Resend
+try {
+    $result = $resend->emails->send([
+        'from' => FROM_EMAIL,
+        'to' => [$emailTo],
+        'subject' => $subject,
+        'html' => $htmlBody
+    ]);
 
-$success = mail($emailTo, $subject, $body, $headers);
-
-if ($success) {
     echo "success";
-} else {
-    echo "Something went wrong :(";
+} catch (Exception $e) {
+    error_log("Resend error: " . $e->getMessage());
+    echo "Failed to send email: " . $e->getMessage();
 }
 
 ?>

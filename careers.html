@@ -313,7 +313,8 @@
                                 <h2>Application Form</h2>
                                 <p>Submit your details our experts will reply you with a quote very soon.</p>
                             </div>
-                            <form id="yarderApplicationForm" action="assets/php/form-process.php" method="POST">
+                            <form id="yarderApplicationForm">
+                                <input type="hidden" name="yarder_application" value="1">
                                 <div class="row">
                                     <div class="col-lg-12">
                                         <div class="yarder-form-group">

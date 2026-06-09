@@ -347,7 +347,8 @@
                 <div class="row justify-content-center">
                     <div class="col-lg-8">
                         <div class="contact-form">
-                            <form id="investorContactForm" method="POST" action="assets/php/form-process.php">
+                            <form id="investorContactForm" action="javascript:void(0);" novalidate>
+                                <input type="hidden" name="investor_form" value="1">
                                 <div class="row">
                                     <div class="col-lg-6 col-md-6">
                                         <div class="form-group">
@@ -393,17 +394,9 @@
                                         </div>
                                     </div>
 
-                                    <!-- <div class="col-lg-12 col-md-12">
-                                        <div class="form-check">
-                                            <input class="form-check-input" type="checkbox" id="nda_agreement" name="nda_agreement" required>
-                                            <label class="form-check-label" for="nda_agreement">
-                                                I understand that detailed information may be subject to NDA requirements
-                                            </label>
-                                        </div>
-                                    </div> -->
-
                                     <div class="col-lg-12 col-md-12 mt-3">
                                         <button type="submit" class="btn btn-primary">Submit Enquiry</button>
+                                        <div id="investorSubmitMsg" class="h3 text-center hidden"></div>
                                     </div>
                                 </div>
                             </form>
