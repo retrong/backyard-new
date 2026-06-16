@@ -2,68 +2,79 @@
 const blogPosts = [
     {
         id: 1,
-        title: "Making The Feast Or Famine Of Freelancing",
-        excerpt: "Making the feast or famine of freelancing work for you is all about finding the right balance. Here are some tips to help you...",
-        image: "assets/img/blog/blog-1.png",
+        title: "The Future of HealthTech: Digital Transformation in Healthcare",
+        excerpt: "Explore how digital innovation is revolutionizing healthcare delivery, from telemedicine to AI diagnostics. Discover the key trends shaping the future of patient care and healthcare operations...",
+        image: "assets/img/blog/blog1.jpg",
         author: "Admin",
-        date: "August 10, 2025",
-        slug: "making-the-feast-or-famine-of-freelancing",
-        category: "Business",
+        date: "January 15, 2026",
+        slug: "future-of-healthtech-digital-transformation",
+        category: "HealthTech",
         featured: true
     },
     {
         id: 2,
-        title: "I Used The Web For A Day On A 50 MB Budget",
-        excerpt: "Using the web on a limited 50 MB budget can be challenging. Here are some strategies to make the most of it...",
-        image: "assets/img/blog/blog-2.png",
+        title: "FinTech Revolution: Transforming Financial Services Through Innovation",
+        excerpt: "Discover how FinTech is reshaping banking, payments, and financial inclusion. Learn about emerging technologies driving the future of finance and what it means for businesses...",
+        image: "assets/img/blog/blog-2.jpg",
         author: "Admin",
-        date: "August 13, 2025",
-        slug: "i-used-the-web-for-a-day-on-50mb-budget",
-        category: "Technology",
+        date: "January 22, 2026",
+        slug: "fintech-revolution-financial-services-innovation",
+        category: "FinTech",
         featured: true
     },
     {
         id: 3,
-        title: "Here are the 5 most telling signs of micromanagement",
-        excerpt: "Micromanagement can hinder productivity and morale. Here are five signs that indicate micromanagement...",
-        image: "assets/img/blog/blog-3.png",
+        title: "MHINO Virtual Wallet: Empowering Financial Independence in Healthcare",
+        excerpt: "Learn how MHINO's innovative virtual wallet system is transforming personal health budgets, enabling choice and control for care recipients while ensuring transparency and compliance...",
+        image: "assets/img/blog/blog3.png",
         author: "Admin",
-        date: "August 15, 2025",
-        slug: "5-signs-of-micromanagement",
-        category: "Management",
+        date: "February 5, 2026",
+        slug: "mhino-virtual-wallet-healthcare-financial-independence",
+        category: "HealthTech",
         featured: true
     },
     {
         id: 4,
-        title: "Add And Show Image With Size From Elementor Widget",
-        excerpt: "Learn how to add and display images with specific sizes using the Elementor widget. This guide will help you...",
-        image: "assets/img/blog/blog-2.png",
+        title: "Cyber Essentials & G-Cloud Framework: Your Path to Secure Compliance",
+        excerpt: "Understanding Cyber Essentials, Cyber Essentials Plus, and G-Cloud Framework compliance. Essential guidance for organizations looking to meet government security standards and win public sector contracts...",
+        image: "assets/img/blog/blog4.jpg",
         author: "Admin",
-        date: "August 15, 2025",
-        slug: "elementor-widget-image-size",
-        category: "Development",
+        date: "February 18, 2026",
+        slug: "cyber-essentials-g-cloud-compliance-security",
+        category: "Compliance",
         featured: true
     },
     {
         id: 5,
-        title: "How To The Active Menu Based On URL In Next.JS?",
-        excerpt: "Learn how to activate the menu based on the current URL in Next.js. This guide will ...",
-        image: "assets/img/blog/blog-2.png",
+        title: "AI Automation in Healthcare: Enhancing Patient Care and Operational Efficiency",
+        excerpt: "Explore how artificial intelligence is automating healthcare processes, from administrative tasks to clinical decision support. Discover the benefits, challenges, and real-world applications...",
+        image: "assets/img/blog/blog5.jpg",
         author: "Admin",
-        date: "August 17, 2025",
-        slug: "active-menu-nextjs",
-        category: "Development",
+        date: "March 3, 2026",
+        slug: "ai-automation-healthcare-patient-care-efficiency",
+        category: "AI & Healthcare",
         featured: true
     },
     {
         id: 6,
-        title: "Instagram Feed Add To Your WordPress Site",
-        excerpt: "Learn how to add an Instagram feed to your WordPress site. This guide will help you integrate social media content seamlessly...",
-        image: "assets/img/blog/blog-3.png",
+        title: "Digital Innovation in Government: Modernizing Public Services for Citizens",
+        excerpt: "How government organizations are leveraging digital transformation to improve citizen services, increase transparency, and enhance operational efficiency. Real strategies and success stories...",
+        image: "assets/img/blog/blog6.jpeg",
         author: "Admin",
-        date: "August 20, 2025",
-        slug: "instagram-feed-wordpress",
-        category: "WordPress",
+        date: "March 17, 2026",
+        slug: "digital-innovation-government-public-services",
+        category: "GovTech",
+        featured: true
+    },
+    {
+        id: 7,
+        title: "PHB Wallets for Local Authorities and ICBs: Enabling Choice and Control",
+        excerpt: "Understanding Personal Health Budget wallets for Integrated Care Boards and Local Authorities. Learn how digital PHB solutions are transforming care delivery and empowering service users...",
+        image: "assets/img/blog/blog7.jpg",
+        author: "Admin",
+        date: "April 2, 2026",
+        slug: "phb-wallets-local-authorities-icbs-choice-control",
+        category: "Healthcare Management",
         featured: true
     }
 ];
@@ -94,7 +105,7 @@ class BlogManager {
                 <div class="single-blog-post">
                     <div class="post-image">
                         <a href="single-blog.html?slug=${post.slug}">
-                            <img src="${post.image}" alt="${post.title}">
+                            <img src="${post.image}" alt="${post.title}" style="width: 100%; height: 320px; object-fit: cover;">
                         </a>
                     </div>
 
