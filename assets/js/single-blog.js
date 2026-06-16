@@ -75,15 +75,17 @@ const blogPostsFullContent = [
             <h3>The Path Forward</h3>
             <p>The future of healthcare is digital, personalized, and patient-centric. Organizations that embrace this transformation strategically—with robust governance, user-centered design, and compliance built in from the start—will lead the next generation of healthcare delivery.</p>
             
-            <blockquote class="blockquote">
-                <p>"We don't separate strategy from execution. We design with implementation in mind and deliver with governance embedded, ensuring healthcare innovations are not just technologically advanced but also clinically safe, regulatory compliant, and operationally sustainable."</p>
-                <footer>— Backyard Technology Team</footer>
-            </blockquote>
-            
             <h3>Getting Started with HealthTech Transformation</h3>
             <p>Whether you're a hospital trust, ICB, local authority, or healthcare provider, the journey to digital transformation begins with understanding where you are and mapping a practical path forward. Our AI-Readiness Audits and Digital Transformation Strategy services provide the foundation for successful healthcare innovation.</p>
             
             <p>Ready to explore how HealthTech can transform your organization? Contact Backyard Technology to discuss your specific challenges and opportunities.</p>
+            
+            <div style="text-align: center; margin-top: 40px;">
+                <button onclick="downloadBlogAsPDF()" class="btn btn-secondary" style="padding: 15px 40px; font-size: 16px; margin-right: 15px;">
+                    <i class="fas fa-download"></i> Download PDF
+                </button>
+                <a href="contact.html" class="btn btn-primary" style="padding: 15px 40px; font-size: 16px;">Get in Touch</a>
+            </div>
         `
     },
     {
@@ -178,17 +180,19 @@ const blogPostsFullContent = [
                 <li><strong>Healthcare FinTech Specialization:</strong> Unique expertise in healthcare payment systems, PHB wallets, and care financial management</li>
             </ul>
             
-            <blockquote class="blockquote">
-                <p>"Innovation in financial services requires more than just great technology—it demands deep understanding of regulatory requirements, security best practices, and user needs. We build FinTech solutions that are not just innovative but also compliant, secure, and user-friendly."</p>
-                <footer>— Backyard Technology Team</footer>
-            </blockquote>
-            
             <h3>Building Your FinTech Solution</h3>
             <p>Whether you're developing a payment platform, digital banking service, or specialized financial management tool, success requires careful planning, robust technology, and regulatory expertise.</p>
             
             <p>Our Digital Transformation Strategy and Compliance as a Service offerings provide the foundation for FinTech success, ensuring your innovation reaches market quickly while meeting all regulatory requirements.</p>
             
             <p>Ready to explore FinTech opportunities for your organization? Contact Backyard Technology to discuss how we can help bring your financial innovation to life.</p>
+            
+            <div style="text-align: center; margin-top: 40px;">
+                <button onclick="downloadBlogAsPDF()" class="btn btn-secondary" style="padding: 15px 40px; font-size: 16px; margin-right: 15px;">
+                    <i class="fas fa-download"></i> Download PDF
+                </button>
+                <a href="contact.html" class="btn btn-primary" style="padding: 15px 40px; font-size: 16px;">Get in Touch</a>
+            </div>
         `
     },
     {
@@ -348,11 +352,6 @@ const blogPostsFullContent = [
                 <li><strong>Ongoing Support and Enhancement:</strong> Continuous technical support, system optimization, and feature development</li>
             </ul>
             
-            <blockquote class="blockquote">
-                <p>"MHINO Virtual Wallet will transform how we manage Personal Health Budgets. What was once a paper-heavy, time-consuming process is now streamlined and transparent. Most importantly, our service users will love the control and visibility it gives them over their care spending."</p>
-                <footer>— Care Manager, Local Authority Social Care Department</footer>
-            </blockquote>
-            
             <h3>The Future of PHB Management</h3>
             <p>As Personal Health Budgets expand across the NHS and social care, digital management systems like MHINO Virtual Wallet will become essential infrastructure. Future developments we're exploring include:</p>
             <ul>
@@ -369,6 +368,13 @@ const blogPostsFullContent = [
             <p>Contact Backyard Technology for a demonstration of MHINO Virtual Wallet and to discuss how it can empower your service users while simplifying your administrative burden.</p>
             
             <p><em>Learn more about MHINO CareOS and our comprehensive healthcare technology solutions on our dedicated product page.</em></p>
+            
+            <div style="text-align: center; margin-top: 40px;">
+                <button onclick="downloadBlogAsPDF()" class="btn btn-secondary" style="padding: 15px 40px; font-size: 16px; margin-right: 15px;">
+                    <i class="fas fa-download"></i> Download PDF
+                </button>
+                <a href="contact.html" class="btn btn-primary" style="padding: 15px 40px; font-size: 16px;">Get in Touch</a>
+            </div>
         `
     },
     {
@@ -595,11 +601,6 @@ const blogPostsFullContent = [
                 <li><strong>Business Resilience:</strong> Ability to withstand and recover from security incidents</li>
             </ul>
             
-            <blockquote class="blockquote">
-                <p>"Cyber security compliance should enable your business growth, not constrain it. We design security controls and compliance frameworks that protect your organization while supporting your commercial objectives."</p>
-                <footer>— Backyard Technology Security Team</footer>
-            </blockquote>
-            
             <h3>Getting Started with Compliance</h3>
             <p>Whether you're pursuing your first Cyber Essentials certification or preparing for G-Cloud listing, the journey begins with understanding where you are and what's required.</p>
             
@@ -614,6 +615,13 @@ const blogPostsFullContent = [
             <p>Contact Backyard Technology today to discuss your compliance requirements and how we can help you achieve certification efficiently and effectively.</p>
             
             <p><em>Backyard Technology is Cyber Essentials Plus certified and has successfully guided dozens of organizations through certification and G-Cloud applications.</em></p>
+            
+            <div style="text-align: center; margin-top: 40px;">
+                <button onclick="downloadBlogAsPDF()" class="btn btn-secondary" style="padding: 15px 40px; font-size: 16px; margin-right: 15px;">
+                    <i class="fas fa-download"></i> Download PDF
+                </button>
+                <a href="contact.html" class="btn btn-primary" style="padding: 15px 40px; font-size: 16px;">Get in Touch</a>
+            </div>
         `
     },
     {
@@ -837,11 +845,6 @@ const blogPostsFullContent = [
             <h4>Ensure Transparency and Trust</h4>
             <p>Make AI decision-making processes understandable. Build trust through demonstrated accuracy and clinical value.</p>
             
-            <blockquote class="blockquote">
-                <p>"AI in healthcare is not about replacing human judgment—it's about augmenting clinical expertise with data-driven insights, freeing healthcare professionals from tedious tasks, and enabling them to focus on what they do best: caring for patients."</p>
-                <footer>— Backyard Technology Clinical AI Team</footer>
-            </blockquote>
-            
             <h3>Getting Started with AI Automation</h3>
             <p>Whether you're exploring AI for the first time or looking to expand existing capabilities, Backyard Technology can guide your journey:</p>
             
@@ -857,6 +860,13 @@ const blogPostsFullContent = [
             <p>Contact Backyard Technology to explore how AI automation can transform your healthcare organization while maintaining the human touch that quality care requires.</p>
             
             <p><em>Learn more about our AI-Readiness Audit & Transformation Roadmap service and how we're helping healthcare organizations harness AI responsibly and effectively.</em></p>
+            
+            <div style="text-align: center; margin-top: 40px;">
+                <button onclick="downloadBlogAsPDF()" class="btn btn-secondary" style="padding: 15px 40px; font-size: 16px; margin-right: 15px;">
+                    <i class="fas fa-download"></i> Download PDF
+                </button>
+                <a href="contact.html" class="btn btn-primary" style="padding: 15px 40px; font-size: 16px;">Get in Touch</a>
+            </div>
         `
     },
     {
@@ -1104,11 +1114,6 @@ const blogPostsFullContent = [
             <h4>Share and Collaborate</h4>
             <p>Learn from other government organizations. Share code, design patterns, and lessons learned. Use common platforms where possible.</p>
             
-            <blockquote class="blockquote">
-                <p>"Digital government transformation succeeds when technology enables better outcomes for citizens. We help government organizations navigate the complexity of transformation while keeping focus on what matters: delivering excellent public services."</p>
-                <footer>— Backyard Technology GovTech Team</footer>
-            </blockquote>
-            
             <h3>The Future of Digital Government</h3>
             <p>Emerging trends shaping the next generation of government services:</p>
             
@@ -1142,6 +1147,13 @@ const blogPostsFullContent = [
             <p>Contact Backyard Technology to discuss how we can support your government organization's digital transformation journey.</p>
             
             <p><em>Explore our Government SaaS solutions and Digital Transformation Strategy services to learn more about how we're helping public sector organizations modernize service delivery.</em></p>
+            
+            <div style="text-align: center; margin-top: 40px;">
+                <button onclick="downloadBlogAsPDF()" class="btn btn-secondary" style="padding: 15px 40px; font-size: 16px; margin-right: 15px;">
+                    <i class="fas fa-download"></i> Download PDF
+                </button>
+                <a href="contact.html" class="btn btn-primary" style="padding: 15px 40px; font-size: 16px;">Get in Touch</a>
+            </div>
         `
     },
     {
@@ -1360,11 +1372,6 @@ const blogPostsFullContent = [
                 <li>Improved relationships between budget holders and coordinators</li>
             </ul>
             
-            <blockquote class="blockquote">
-                <p>"MHINO Virtual Wallet transformed our PHB program from a small pilot struggling with admin to a core part of our personalization offer. Most importantly, our service users have told us they finally feel in control of their care."</p>
-                <footer>— Head of Continuing Care, NHS ICB</footer>
-            </blockquote>
-            
             <h3>Strategic Considerations for PHB Digital Transformation</h3>
             
             <h4>Start with Policy and Process</h4>
@@ -1441,6 +1448,13 @@ const blogPostsFullContent = [
             <p>Contact Backyard Technology to discuss how MHINO Virtual Wallet can transform PHB management for your Local Authority or ICB, empowering service users while reducing administrative burden and ensuring compliance.</p>
             
             <p><em>Learn more about MHINO CareOS and our comprehensive healthcare and social care technology solutions.</em></p>
+            
+            <div style="text-align: center; margin-top: 40px;">
+                <button onclick="downloadBlogAsPDF()" class="btn btn-secondary" style="padding: 15px 40px; font-size: 16px; margin-right: 15px;">
+                    <i class="fas fa-download"></i> Download PDF
+                </button>
+                <a href="contact.html" class="btn btn-primary" style="padding: 15px 40px; font-size: 16px;">Get in Touch</a>
+            </div>
         `
     }
 ];
@@ -1606,3 +1620,24 @@ class SingleBlogManager {
 document.addEventListener('DOMContentLoaded', function() {
     window.singleBlogManager = new SingleBlogManager();
 });
+
+// PDF Download Function using native browser print
+function downloadBlogAsPDF() {
+    const post = window.singleBlogManager.currentPost;
+    if (!post) {
+        alert('No blog post loaded');
+        return;
+    }
+
+    // Update page title for PDF filename suggestion
+    const originalTitle = document.title;
+    document.title = `${post.slug}-backyard-technology`;
+
+    // Trigger browser print dialog (users can save as PDF)
+    window.print();
+
+    // Restore original title after print dialog
+    setTimeout(() => {
+        document.title = originalTitle;
+    }, 100);
+}

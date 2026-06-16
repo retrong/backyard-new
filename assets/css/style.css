@@ -7814,3 +7814,152 @@ Yarders/Careers Page CSS
 .single-features-box{
   padding: 10px 0px;
 }
+
+/*================================================
+Print Styles for PDF Download
+=================================================*/
+@media print {
+    /* Hide navigation, header, footer during print */
+    .header-area,
+    .page-title-area,
+    .footer-area,
+    .go-top,
+    .dark-version,
+    .preloader,
+    .article-footer,
+    .btn,
+    button,
+    .article-share {
+        display: none !important;
+    }
+
+    /* Show only blog content */
+    body {
+        background: white;
+        font-size: 11pt;
+        line-height: 1.6;
+        color: #333;
+    }
+
+    .blog-details-area {
+        padding: 0;
+        margin: 0;
+    }
+
+    .blog-details {
+        max-width: 100%;
+        page-break-inside: avoid;
+    }
+
+    /* Add company header for print */
+    .blog-details::before {
+        content: "Backyard Technology";
+        display: block;
+        text-align: center;
+        font-size: 24pt;
+        color: #0066cc;
+        font-weight: bold;
+        padding: 20px 0 10px 0;
+        border-bottom: 3px solid #0066cc;
+        margin-bottom: 30px;
+    }
+
+    /* Add watermark */
+    body::after {
+        content: "BACKYARD TECHNOLOGY";
+        position: fixed;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%) rotate(-45deg);
+        font-size: 80pt;
+        font-weight: bold;
+        color: #0066cc;
+        opacity: 0.03;
+        z-index: -1;
+        white-space: nowrap;
+        pointer-events: none;
+    }
+
+    /* Format images */
+    img {
+        max-width: 100%;
+        height: auto !important;
+        page-break-inside: avoid;
+    }
+
+    /* Format headings */
+    h1, h2, h3, h4, h5, h6 {
+        page-break-after: avoid;
+        color: #333;
+        margin-top: 1em;
+    }
+
+    /* Format paragraphs */
+    p {
+        orphans: 3;
+        widows: 3;
+    }
+
+    /* Page breaks */
+    .article-content,
+    .article-image {
+        page-break-inside: avoid;
+    }
+
+    /* Footer with contact info */
+    #blog-post-content::after {
+        content: "\A\AContact Backyard Technology\A\AWebsite: www.backyardtech.co.uk\AEmail: contact@backyardtech.co.uk\APhone: +44 7769 750055\AAddress: 1 George Williams Way, Colchester CO1 2JS, UK\A\A© 2026 Backyard Technology. All rights reserved.";
+        display: block;
+        white-space: pre-wrap;
+        margin-top: 50px;
+        padding: 20px;
+        border-top: 2px solid #0066cc;
+        background-color: #f8f9fa;
+        font-size: 9pt;
+        line-height: 1.8;
+        page-break-inside: avoid;
+    }
+
+    /* Remove any button containers in content */
+    #blog-post-content .btn,
+    #blog-post-content button,
+    #blog-post-content a[class*="btn"] {
+        display: none !important;
+    }
+
+    /* Clean up any centered button divs */
+    #blog-post-content div[style*="text-align: center"] {
+        display: none !important;
+    }
+
+    /* Ensure proper spacing */
+    .article-content h2 {
+        margin-top: 20pt;
+        margin-bottom: 10pt;
+        font-size: 14pt;
+    }
+
+    .article-content h3 {
+        margin-top: 15pt;
+        margin-bottom: 8pt;
+        font-size: 12pt;
+    }
+
+    /* Links */
+    a {
+        color: #0066cc;
+        text-decoration: none;
+    }
+
+    /* Lists */
+    ul, ol {
+        margin-left: 20pt;
+    }
+
+    /* Code blocks if any */
+    code, pre {
+        font-family: 'Courier New', monospace;
+        background-color: #f5f5f5;
+        padding: 2pt;
+    }
+}
