@@ -80,8 +80,8 @@ const blogPostsFullContent = [
             
             <p>Ready to explore how HealthTech can transform your organization? Contact Backyard Technologies Limited to discuss your specific challenges and opportunities.</p>
             
-            <div style="text-align: center; margin-top: 40px;">
-                <button onclick="downloadBlogAsPDF()" class="btn btn-secondary" style="padding: 15px 40px; font-size: 16px; margin-right: 15px;">
+            <div style="text-align: center; margin-top: 40px; display: flex; flex-wrap: wrap; gap: 10px; justify-content: center;">
+                <button onclick="downloadBlogAsPDF()" class="btn btn-secondary" style="padding: 15px 40px; font-size: 16px;">
                     <i class="fas fa-download"></i> Download PDF
                 </button>
                 <a href="contact.html" class="btn btn-primary" style="padding: 15px 40px; font-size: 16px;">Get in Touch</a>
@@ -187,8 +187,8 @@ const blogPostsFullContent = [
             
             <p>Ready to explore FinTech opportunities for your organization? Contact Backyard Technologies Limited to discuss how we can help bring your financial innovation to life.</p>
             
-            <div style="text-align: center; margin-top: 40px;">
-                <button onclick="downloadBlogAsPDF()" class="btn btn-secondary" style="padding: 15px 40px; font-size: 16px; margin-right: 15px;">
+            <div style="text-align: center; margin-top: 40px; display: flex; flex-wrap: wrap; gap: 10px; justify-content: center;">
+                <button onclick="downloadBlogAsPDF()" class="btn btn-secondary" style="padding: 15px 40px; font-size: 16px;">
                     <i class="fas fa-download"></i> Download PDF
                 </button>
                 <a href="contact.html" class="btn btn-primary" style="padding: 15px 40px; font-size: 16px;">Get in Touch</a>
@@ -369,8 +369,8 @@ const blogPostsFullContent = [
             
             <p><em>Learn more about MHINO CareOS and our comprehensive healthcare technology solutions on our dedicated product page.</em></p>
             
-            <div style="text-align: center; margin-top: 40px;">
-                <button onclick="downloadBlogAsPDF()" class="btn btn-secondary" style="padding: 15px 40px; font-size: 16px; margin-right: 15px;">
+            <div style="text-align: center; margin-top: 40px; display: flex; flex-wrap: wrap; gap: 10px; justify-content: center;">
+                <button onclick="downloadBlogAsPDF()" class="btn btn-secondary" style="padding: 15px 40px; font-size: 16px;">
                     <i class="fas fa-download"></i> Download PDF
                 </button>
                 <a href="contact.html" class="btn btn-primary" style="padding: 15px 40px; font-size: 16px;">Get in Touch</a>
@@ -616,8 +616,8 @@ const blogPostsFullContent = [
             
             <p><em>Backyard Technologies Limited is Cyber Essentials Plus certified and has successfully guided dozens of organizations through certification and G-Cloud applications.</em></p>
             
-            <div style="text-align: center; margin-top: 40px;">
-                <button onclick="downloadBlogAsPDF()" class="btn btn-secondary" style="padding: 15px 40px; font-size: 16px; margin-right: 15px;">
+            <div style="text-align: center; margin-top: 40px; display: flex; flex-wrap: wrap; gap: 10px; justify-content: center;">
+                <button onclick="downloadBlogAsPDF()" class="btn btn-secondary" style="padding: 15px 40px; font-size: 16px;">
                     <i class="fas fa-download"></i> Download PDF
                 </button>
                 <a href="contact.html" class="btn btn-primary" style="padding: 15px 40px; font-size: 16px;">Get in Touch</a>
@@ -861,8 +861,8 @@ const blogPostsFullContent = [
             
             <p><em>Learn more about our AI-Readiness Audit & Transformation Roadmap service and how we're helping healthcare organizations harness AI responsibly and effectively.</em></p>
             
-            <div style="text-align: center; margin-top: 40px;">
-                <button onclick="downloadBlogAsPDF()" class="btn btn-secondary" style="padding: 15px 40px; font-size: 16px; margin-right: 15px;">
+            <div style="text-align: center; margin-top: 40px; display: flex; flex-wrap: wrap; gap: 10px; justify-content: center;">
+                <button onclick="downloadBlogAsPDF()" class="btn btn-secondary" style="padding: 15px 40px; font-size: 16px;">
                     <i class="fas fa-download"></i> Download PDF
                 </button>
                 <a href="contact.html" class="btn btn-primary" style="padding: 15px 40px; font-size: 16px;">Get in Touch</a>
@@ -1148,8 +1148,8 @@ const blogPostsFullContent = [
             
             <p><em>Explore our Government SaaS solutions and Digital Transformation Strategy services to learn more about how we're helping public sector organizations modernize service delivery.</em></p>
             
-            <div style="text-align: center; margin-top: 40px;">
-                <button onclick="downloadBlogAsPDF()" class="btn btn-secondary" style="padding: 15px 40px; font-size: 16px; margin-right: 15px;">
+            <div style="text-align: center; margin-top: 40px; display: flex; flex-wrap: wrap; gap: 10px; justify-content: center;">
+                <button onclick="downloadBlogAsPDF()" class="btn btn-secondary" style="padding: 15px 40px; font-size: 16px;">
                     <i class="fas fa-download"></i> Download PDF
                 </button>
                 <a href="contact.html" class="btn btn-primary" style="padding: 15px 40px; font-size: 16px;">Get in Touch</a>
@@ -1449,8 +1449,8 @@ const blogPostsFullContent = [
             
             <p><em>Learn more about MHINO CareOS and our comprehensive healthcare and social care technology solutions.</em></p>
             
-            <div style="text-align: center; margin-top: 40px;">
-                <button onclick="downloadBlogAsPDF()" class="btn btn-secondary" style="padding: 15px 40px; font-size: 16px; margin-right: 15px;">
+            <div style="text-align: center; margin-top: 40px; display: flex; flex-wrap: wrap; gap: 10px; justify-content: center;">
+                <button onclick="downloadBlogAsPDF()" class="btn btn-secondary" style="padding: 15px 40px; font-size: 16px;">
                     <i class="fas fa-download"></i> Download PDF
                 </button>
                 <a href="contact.html" class="btn btn-primary" style="padding: 15px 40px; font-size: 16px;">Get in Touch</a>
@@ -1487,8 +1487,8 @@ const blogPostsFullContent = [
             
             <p>The digital transformation of UK social care is not coming—it is already here. Organizations that embrace this shift with a clear understanding of both opportunities and operational realities will lead the sector forward.</p>
             
-            <div style="text-align: center; margin-top: 40px;">
-                <button onclick="downloadBlogAsPDF()" class="btn btn-secondary" style="padding: 15px 40px; font-size: 16px; margin-right: 15px;">
+            <div style="text-align: center; margin-top: 40px; display: flex; flex-wrap: wrap; gap: 10px; justify-content: center;">
+                <button onclick="downloadBlogAsPDF()" class="btn btn-secondary" style="padding: 15px 40px; font-size: 16px;">
                     <i class="fas fa-download"></i> Download PDF
                 </button>
                 <a href="contact.html" class="btn btn-primary" style="padding: 15px 40px; font-size: 16px;">Get in Touch</a>
@@ -1525,8 +1525,8 @@ const blogPostsFullContent = [
             
             <p>The UK care sector faces a critical choice: continue wrestling with manual reconciliation, or embrace FinTech-grade automation that transforms finance from a compliance burden into a strategic operational advantage.</p>
             
-            <div style="text-align: center; margin-top: 40px;">
-                <button onclick="downloadBlogAsPDF()" class="btn btn-secondary" style="padding: 15px 40px; font-size: 16px; margin-right: 15px;">
+            <div style="text-align: center; margin-top: 40px; display: flex; flex-wrap: wrap; gap: 10px; justify-content: center;">
+                <button onclick="downloadBlogAsPDF()" class="btn btn-secondary" style="padding: 15px 40px; font-size: 16px;">
                     <i class="fas fa-download"></i> Download PDF
                 </button>
                 <a href="contact.html" class="btn btn-primary" style="padding: 15px 40px; font-size: 16px;">Get in Touch</a>
@@ -1566,8 +1566,8 @@ const blogPostsFullContent = [
             
             <p>The future of care will be powered by AI, but only for organizations that have invested in clean, structured operational data today.</p>
             
-            <div style="text-align: center; margin-top: 40px;">
-                <button onclick="downloadBlogAsPDF()" class="btn btn-secondary" style="padding: 15px 40px; font-size: 16px; margin-right: 15px;">
+            <div style="text-align: center; margin-top: 40px; display: flex; flex-wrap: wrap; gap: 10px; justify-content: center;">
+                <button onclick="downloadBlogAsPDF()" class="btn btn-secondary" style="padding: 15px 40px; font-size: 16px;">
                     <i class="fas fa-download"></i> Download PDF
                 </button>
                 <a href="contact.html" class="btn btn-primary" style="padding: 15px 40px; font-size: 16px;">Get in Touch</a>
@@ -1621,8 +1621,8 @@ const blogPostsFullContent = [
             
             <p>We believe this is the only sustainable way to approach inspection readiness at scale, because it removes the gap between delivering good care and being able to prove it. The future of inspection readiness is not harder work the week before inspection—it's continuous evidence generation as part of normal operations.</p>
             
-            <div style="text-align: center; margin-top: 40px;">
-                <button onclick="downloadBlogAsPDF()" class="btn btn-secondary" style="padding: 15px 40px; font-size: 16px; margin-right: 15px;">
+            <div style="text-align: center; margin-top: 40px; display: flex; flex-wrap: wrap; gap: 10px; justify-content: center;">
+                <button onclick="downloadBlogAsPDF()" class="btn btn-secondary" style="padding: 15px 40px; font-size: 16px;">
                     <i class="fas fa-download"></i> Download PDF
                 </button>
                 <a href="contact.html" class="btn btn-primary" style="padding: 15px 40px; font-size: 16px;">Get in Touch</a>
