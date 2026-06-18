@@ -52,8 +52,8 @@ const blogPostsFullContent = [
                 <li><strong>Digital Divide:</strong> Not all patients have equal access to technology, potentially exacerbating health inequalities.</li>
             </ul>
             
-            <h3>How Backyard Technology Enables Healthcare Innovation</h3>
-            <p>At Backyard Technology, we understand that successful HealthTech implementation requires more than just cutting-edge technology—it demands a strategic approach that balances innovation with compliance, user experience, and operational realities.</p>
+            <h3>How Backyard Technology Limited Enables Healthcare Innovation</h3>
+            <p>At Backyard Technology Limited, we understand that successful HealthTech implementation requires more than just cutting-edge technology—it demands a strategic approach that balances innovation with compliance, user experience, and operational realities.</p>
             
             <p>Our approach includes:</p>
             <ul>
@@ -64,7 +64,7 @@ const blogPostsFullContent = [
             </ul>
             
             <h3>Real-World Impact: Success Stories</h3>
-            <p>Healthcare organizations working with Backyard Technology have achieved:</p>
+            <p>Healthcare organizations working with Backyard Technology Limited have achieved:</p>
             <ul>
                 <li>40% reduction in administrative burden through process automation</li>
                 <li>Improved patient satisfaction scores by 35% through better care coordination</li>
@@ -78,7 +78,7 @@ const blogPostsFullContent = [
             <h3>Getting Started with HealthTech Transformation</h3>
             <p>Whether you're a hospital trust, ICB, local authority, or healthcare provider, the journey to digital transformation begins with understanding where you are and mapping a practical path forward. Our AI-Readiness Audits and Digital Transformation Strategy services provide the foundation for successful healthcare innovation.</p>
             
-            <p>Ready to explore how HealthTech can transform your organization? Contact Backyard Technology to discuss your specific challenges and opportunities.</p>
+            <p>Ready to explore how HealthTech can transform your organization? Contact Backyard Technology Limited to discuss your specific challenges and opportunities.</p>
             
             <div style="text-align: center; margin-top: 40px;">
                 <button onclick="downloadBlogAsPDF()" class="btn btn-secondary" style="padding: 15px 40px; font-size: 16px; margin-right: 15px;">
@@ -145,7 +145,7 @@ const blogPostsFullContent = [
             <h3>FinTech in Healthcare: A Special Case</h3>
             <p>The intersection of FinTech and HealthTech represents a particularly promising frontier. Personal Health Budgets (PHBs), care payment systems, and healthcare financial management require specialized FinTech solutions that combine financial technology expertise with healthcare domain knowledge.</p>
             
-            <p>At Backyard Technology, our MHINO Virtual Wallet system exemplifies this convergence, providing secure, compliant financial management for healthcare services while empowering service users with choice and control over their care spending.</p>
+            <p>At Backyard Technology Limited, our MHINO Virtual Wallet system exemplifies this convergence, providing secure, compliant financial management for healthcare services while empowering service users with choice and control over their care spending.</p>
             
             <h3>Regulatory Challenges and Compliance</h3>
             <p>FinTech innovation must navigate complex regulatory frameworks:</p>
@@ -171,7 +171,7 @@ const blogPostsFullContent = [
             <h4>AI-Powered Financial Advisors</h4>
             <p>Increasingly sophisticated AI will provide personalized financial guidance, automated portfolio management, and predictive insights formerly available only to high-net-worth individuals.</p>
             
-            <h3>How Backyard Technology Enables FinTech Innovation</h3>
+            <h3>How Backyard Technology Limited Enables FinTech Innovation</h3>
             <p>Our expertise spans both technological innovation and regulatory compliance, essential for successful FinTech ventures:</p>
             <ul>
                 <li><strong>Secure Architecture Design:</strong> Building FinTech platforms with security, scalability, and compliance built in from day one</li>
@@ -185,7 +185,7 @@ const blogPostsFullContent = [
             
             <p>Our Digital Transformation Strategy and Compliance as a Service offerings provide the foundation for FinTech success, ensuring your innovation reaches market quickly while meeting all regulatory requirements.</p>
             
-            <p>Ready to explore FinTech opportunities for your organization? Contact Backyard Technology to discuss how we can help bring your financial innovation to life.</p>
+            <p>Ready to explore FinTech opportunities for your organization? Contact Backyard Technology Limited to discuss how we can help bring your financial innovation to life.</p>
             
             <div style="text-align: center; margin-top: 40px;">
                 <button onclick="downloadBlogAsPDF()" class="btn btn-secondary" style="padding: 15px 40px; font-size: 16px; margin-right: 15px;">
@@ -343,7 +343,7 @@ const blogPostsFullContent = [
             <p>We regularly enhance MHINO Virtual Wallet based on user feedback, regulatory changes, and technological advancement. Your investment continues delivering value through ongoing improvements.</p>
             
             <h3>Implementation and Support</h3>
-            <p>Successful PHB technology implementation requires more than just software. Backyard Technology provides:</p>
+            <p>Successful PHB technology implementation requires more than just software. Backyard Technology Limited provides:</p>
             <ul>
                 <li><strong>Discovery and Planning:</strong> Understanding your specific PHB program requirements and challenges</li>
                 <li><strong>Configuration and Integration:</strong> Tailoring the system to your workflows and connecting with existing systems</li>
@@ -365,7 +365,7 @@ const blogPostsFullContent = [
             <h3>Getting Started with MHINO Virtual Wallet</h3>
             <p>If your organization manages Personal Health Budgets, Individual Service Funds, or similar person-centered funding arrangements, MHINO Virtual Wallet can transform your approach. Whether you're implementing PHBs for the first time or looking to improve existing processes, we can help.</p>
             
-            <p>Contact Backyard Technology for a demonstration of MHINO Virtual Wallet and to discuss how it can empower your service users while simplifying your administrative burden.</p>
+            <p>Contact Backyard Technology Limited for a demonstration of MHINO Virtual Wallet and to discuss how it can empower your service users while simplifying your administrative burden.</p>
             
             <p><em>Learn more about MHINO CareOS and our comprehensive healthcare technology solutions on our dedicated product page.</em></p>
             
@@ -390,7 +390,7 @@ const blogPostsFullContent = [
         featured: true,
         introduction: "In an era of increasing cyber threats and stringent regulatory requirements, demonstrating robust cyber security is no longer optional—it's essential for business success, particularly when working with government and public sector clients. Cyber Essentials, Cyber Essentials Plus, and G-Cloud Framework compliance represent key benchmarks that organizations must meet to compete for public sector contracts and demonstrate security competence.",
         fullContent: `
-            <p>Cyber security breaches are not just technical problems—they're existential business risks that can result in financial losses, reputational damage, regulatory penalties, and loss of customer trust. For organizations working with government bodies, the NHS, and other public sector entities, meeting recognized cyber security standards is mandatory. This comprehensive guide explains Cyber Essentials, Cyber Essentials Plus, and G-Cloud Framework compliance, and how Backyard Technology's Compliance as a Service helps organizations achieve and maintain these critical certifications.</p>
+            <p>Cyber security breaches are not just technical problems—they're existential business risks that can result in financial losses, reputational damage, regulatory penalties, and loss of customer trust. For organizations working with government bodies, the NHS, and other public sector entities, meeting recognized cyber security standards is mandatory. This comprehensive guide explains Cyber Essentials, Cyber Essentials Plus, and G-Cloud Framework compliance, and how Backyard Technology Limited Compliance as a Service helps organizations achieve and maintain these critical certifications.</p>
             
             <h3>Understanding Cyber Essentials</h3>
             
@@ -514,7 +514,7 @@ const blogPostsFullContent = [
                 <li><strong>Maintaining Compliance:</strong> Keeping certifications current as systems change</li>
             </ul>
             
-            <h3>Backyard Technology's Compliance as a Service</h3>
+            <h3>Backyard Technology Limited Compliance as a Service</h3>
             <p>Achieving and maintaining cyber security certifications shouldn't be an overwhelming burden. Our Compliance as a Service offering provides end-to-end support for organizations pursuing Cyber Essentials, Cyber Essentials Plus, and G-Cloud Framework compliance.</p>
             
             <h4>Our Approach</h4>
@@ -572,7 +572,7 @@ const blogPostsFullContent = [
             <h3>Real-World Success: Case Studies</h3>
             
             <h4>HealthTech Startup G-Cloud Success</h4>
-            <p>A healthcare technology startup developing a SaaS solution for NHS trusts needed G-Cloud listing but had no prior experience with government compliance frameworks. Backyard Technology provided:</p>
+            <p>A healthcare technology startup developing a SaaS solution for NHS trusts needed G-Cloud listing but had no prior experience with government compliance frameworks. Backyard Technology Limited provided:</p>
             <ul>
                 <li>Complete security architecture review and hardening</li>
                 <li>Cyber Essentials Plus certification achievement</li>
@@ -582,7 +582,7 @@ const blogPostsFullContent = [
             <p><strong>Result:</strong> First G-Cloud contract won within three months of listing, followed by multiple additional sales.</p>
             
             <h4>Local Authority Supplier Compliance</h4>
-            <p>A software company providing services to local authorities faced losing contracts due to lack of Cyber Essentials certification. Backyard Technology delivered:</p>
+            <p>A software company providing services to local authorities faced losing contracts due to lack of Cyber Essentials certification. Backyard Technology Limited delivered:</p>
             <ul>
                 <li>Rapid gap assessment identifying 23 remediation items</li>
                 <li>Prioritized implementation plan completed in six weeks</li>
@@ -612,9 +612,9 @@ const blogPostsFullContent = [
                 <li>Recommended approach and next steps</li>
             </ul>
             
-            <p>Contact Backyard Technology today to discuss your compliance requirements and how we can help you achieve certification efficiently and effectively.</p>
+            <p>Contact Backyard Technology Limited today to discuss your compliance requirements and how we can help you achieve certification efficiently and effectively.</p>
             
-            <p><em>Backyard Technology is Cyber Essentials Plus certified and has successfully guided dozens of organizations through certification and G-Cloud applications.</em></p>
+            <p><em>Backyard Technology Limited is Cyber Essentials Plus certified and has successfully guided dozens of organizations through certification and G-Cloud applications.</em></p>
             
             <div style="text-align: center; margin-top: 40px;">
                 <button onclick="downloadBlogAsPDF()" class="btn btn-secondary" style="padding: 15px 40px; font-size: 16px; margin-right: 15px;">
@@ -771,7 +771,7 @@ const blogPostsFullContent = [
                 <li>Increased patient engagement between appointments</li>
             </ul>
             
-            <h3>Backyard Technology's Approach to AI in Healthcare</h3>
+            <h3>Backyard Technology Limited Approach to AI in Healthcare</h3>
             <p>We believe AI should augment human expertise, not replace it. Our approach to AI automation in healthcare is grounded in practical experience and deep understanding of both healthcare and technology:</p>
             
             <h4>AI-Readiness Audits</h4>
@@ -846,7 +846,7 @@ const blogPostsFullContent = [
             <p>Make AI decision-making processes understandable. Build trust through demonstrated accuracy and clinical value.</p>
             
             <h3>Getting Started with AI Automation</h3>
-            <p>Whether you're exploring AI for the first time or looking to expand existing capabilities, Backyard Technology can guide your journey:</p>
+            <p>Whether you're exploring AI for the first time or looking to expand existing capabilities, Backyard Technology Limited can guide your journey:</p>
             
             <p><strong>Our AI Kickstart Program includes:</strong></p>
             <ul>
@@ -857,7 +857,7 @@ const blogPostsFullContent = [
                 <li>Risk assessment and mitigation strategies</li>
             </ul>
             
-            <p>Contact Backyard Technology to explore how AI automation can transform your healthcare organization while maintaining the human touch that quality care requires.</p>
+            <p>Contact Backyard Technology Limited to explore how AI automation can transform your healthcare organization while maintaining the human touch that quality care requires.</p>
             
             <p><em>Learn more about our AI-Readiness Audit & Transformation Roadmap service and how we're helping healthcare organizations harness AI responsibly and effectively.</em></p>
             
@@ -1050,7 +1050,7 @@ const blogPostsFullContent = [
                 <li><strong>Standardization:</strong> Balancing consistency with local needs</li>
             </ul>
             
-            <h3>How Backyard Technology Enables Government Digital Transformation</h3>
+            <h3>How Backyard Technology Limited Enables Government Digital Transformation</h3>
             <p>We understand that government digital transformation is as much about people and processes as technology. Our experience spans central government, local authorities, NHS trusts, and other public sector bodies.</p>
             
             <h4>Digital Transformation Strategy</h4>
@@ -1133,7 +1133,7 @@ const blogPostsFullContent = [
             <p>Natural language interfaces making government services more accessible and intuitive.</p>
             
             <h3>Getting Started with Digital Transformation</h3>
-            <p>Whether you're at the beginning of your digital journey or looking to accelerate existing efforts, Backyard Technology can help:</p>
+            <p>Whether you're at the beginning of your digital journey or looking to accelerate existing efforts, Backyard Technology Limited can help:</p>
             
             <p><strong>Our Government Digital Kickstart includes:</strong></p>
             <ul>
@@ -1144,7 +1144,7 @@ const blogPostsFullContent = [
                 <li>Funding and business case support</li>
             </ul>
             
-            <p>Contact Backyard Technology to discuss how we can support your government organization's digital transformation journey.</p>
+            <p>Contact Backyard Technology Limited to discuss how we can support your government organization's digital transformation journey.</p>
             
             <p><em>Explore our Government SaaS solutions and Digital Transformation Strategy services to learn more about how we're helping public sector organizations modernize service delivery.</em></p>
             
@@ -1320,7 +1320,7 @@ const blogPostsFullContent = [
             </ul>
             
             <h3>MHINO Virtual Wallet for PHB Management</h3>
-            <p>Backyard Technology's MHINO Virtual Wallet is specifically designed for Local Authorities and ICBs implementing PHB programs. Unlike generic financial management tools, it understands healthcare and social care workflows, regulations, and terminology.</p>
+            <p>Backyard Technology Limited MHINO Virtual Wallet is specifically designed for Local Authorities and ICBs implementing PHB programs. Unlike generic financial management tools, it understands healthcare and social care workflows, regulations, and terminology.</p>
             
             <h4>Purpose-Built for Health and Social Care</h4>
             <ul>
@@ -1436,7 +1436,7 @@ const blogPostsFullContent = [
             <h3>Getting Started with Digital PHB Solutions</h3>
             <p>Whether you're launching a new PHB program or looking to improve an existing one, digital wallet solutions can transform your approach.</p>
             
-            <p><strong>Backyard Technology's PHB Kickstart Program includes:</strong></p>
+            <p><strong>Backyard Technology Limited PHB Kickstart Program includes:</strong></p>
             <ul>
                 <li>Assessment of your current PHB program and challenges</li>
                 <li>Policy and process review with optimization recommendations</li>
@@ -1445,7 +1445,7 @@ const blogPostsFullContent = [
                 <li>Business case support demonstrating ROI</li>
             </ul>
             
-            <p>Contact Backyard Technology to discuss how MHINO Virtual Wallet can transform PHB management for your Local Authority or ICB, empowering service users while reducing administrative burden and ensuring compliance.</p>
+            <p>Contact Backyard Technology Limited to discuss how MHINO Virtual Wallet can transform PHB management for your Local Authority or ICB, empowering service users while reducing administrative burden and ensuring compliance.</p>
             
             <p><em>Learn more about MHINO CareOS and our comprehensive healthcare and social care technology solutions.</em></p>
             
@@ -1496,7 +1496,7 @@ class SingleBlogManager {
         const post = this.currentPost;
 
         // Update page title
-        document.title = `${post.title} - Backyard Technology`;
+        document.title = `${post.title} - Backyard Technology Limited`;
 
         // Update breadcrumb
         const breadcrumbTitle = document.querySelector('.page-title-content h2');
