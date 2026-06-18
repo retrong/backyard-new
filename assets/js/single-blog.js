@@ -8,7 +8,7 @@ const blogPostsFullContent = [
         id: 1,
         title: "The Future of HealthTech: Digital Transformation in Healthcare",
         excerpt: "Explore how digital innovation is revolutionizing healthcare delivery, from telemedicine to AI diagnostics. Discover the key trends shaping the future of patient care and healthcare operations...",
-        image: "assets/img/blog/blog1.jpg",
+        image: "assets/img/blog/blog1.png",
         author: "Admin",
         authorImage: "assets/img/blog/no-profile.svg",
         slug: "future-of-healthtech-digital-transformation",
@@ -92,7 +92,7 @@ const blogPostsFullContent = [
         id: 2,
         title: "FinTech Revolution: Transforming Financial Services Through Innovation",
         excerpt: "Discover how FinTech is reshaping banking, payments, and financial inclusion. Learn about emerging technologies driving the future of finance and what it means for businesses...",
-        image: "assets/img/blog/blog-2.jpg",
+        image: "assets/img/blog/blog2.png",
         author: "Admin",
         authorImage: "assets/img/blog/no-profile.svg",
         slug: "fintech-revolution-financial-services-innovation",
@@ -381,7 +381,7 @@ const blogPostsFullContent = [
         id: 4,
         title: "Cyber Essentials & G-Cloud Framework: Your Path to Secure Compliance",
         excerpt: "Understanding Cyber Essentials, Cyber Essentials Plus, and G-Cloud Framework compliance. Essential guidance for organizations looking to meet government security standards and win public sector contracts...",
-        image: "assets/img/blog/blog4.jpg",
+        image: "assets/img/blog/blog4.png",
         author: "Admin",
         authorImage: "assets/img/blog/no-profile.svg",
         slug: "cyber-essentials-g-cloud-compliance-security",
@@ -628,7 +628,7 @@ const blogPostsFullContent = [
         id: 5,
         title: "AI Automation in Healthcare: Enhancing Patient Care and Operational Efficiency",
         excerpt: "Explore how artificial intelligence is automating healthcare processes, from administrative tasks to clinical decision support. Discover the benefits, challenges, and real-world applications...",
-        image: "assets/img/blog/blog5.jpg",
+        image: "assets/img/blog/blog5.png",
         author: "Admin",
         authorImage: "assets/img/blog/no-profile.svg",
         slug: "ai-automation-healthcare-patient-care-efficiency",
@@ -873,7 +873,7 @@ const blogPostsFullContent = [
         id: 6,
         title: "Digital Innovation in Government: Modernizing Public Services for Citizens",
         excerpt: "How government organizations are leveraging digital transformation to improve citizen services, increase transparency, and enhance operational efficiency. Real strategies and success stories...",
-        image: "assets/img/blog/blog6.jpeg",
+        image: "assets/img/blog/blog6.png",
         author: "Admin",
         authorImage: "assets/img/blog/no-profile.svg",
         slug: "digital-innovation-government-public-services",
@@ -1160,7 +1160,7 @@ const blogPostsFullContent = [
         id: 7,
         title: "PHB Wallets for Local Authorities and ICBs: Enabling Choice and Control",
         excerpt: "Understanding Personal Health Budget wallets for Integrated Care Boards and Local Authorities. Learn how digital PHB solutions are transforming care delivery and empowering service users...",
-        image: "assets/img/blog/blog7.jpg",
+        image: "assets/img/blog/blog7.png",
         author: "Admin",
         authorImage: "assets/img/blog/no-profile.svg",
         slug: "phb-wallets-local-authorities-icbs-choice-control",
@@ -1448,6 +1448,178 @@ const blogPostsFullContent = [
             <p>Contact Backyard Technology Limited to discuss how MHINO Virtual Wallet can transform PHB management for your Local Authority or ICB, empowering service users while reducing administrative burden and ensuring compliance.</p>
             
             <p><em>Learn more about MHINO CareOS and our comprehensive healthcare and social care technology solutions.</em></p>
+            
+            <div style="text-align: center; margin-top: 40px;">
+                <button onclick="downloadBlogAsPDF()" class="btn btn-secondary" style="padding: 15px 40px; font-size: 16px; margin-right: 15px;">
+                    <i class="fas fa-download"></i> Download PDF
+                </button>
+                <a href="contact.html" class="btn btn-primary" style="padding: 15px 40px; font-size: 16px;">Get in Touch</a>
+            </div>
+        `
+    },
+    {
+        id: 8,
+        title: "The Digital Prescription: How HealthTech Is Rewriting the Rules of UK Social Care",
+        excerpt: "The UK care sector is undergoing its most significant operational shift in decades. Discover how digital health technology is reshaping UK social care operations, from regulatory compliance to offline-first design and unified operational ecosystems...",
+        image: "assets/img/blog/blog8.png",
+        author: "Admin",
+        authorImage: "assets/img/blog/no-profile.svg",
+        slug: "digital-prescription-healthtech-uk-social-care",
+        category: "HealthTech",
+        tags: ["HealthTech", "Digital Care", "UK Social Care", "Compliance", "MHINO"],
+        featured: true,
+        introduction: "The UK care sector is undergoing its most significant operational shift in decades. Digital health technology is no longer a future prospect — it is the present standard. This transformation is driven by regulatory frameworks like the CQC's Single Assessment Framework and NHSX's Digital Social Care Record programme, which explicitly reward evidenced, real-time care documentation.",
+        fullContent: `
+            <h3>A Sector at a Turning Point</h3>
+            <p>For decades, the UK adult social care sector operated on a foundation of paper records, verbal handovers, and manual spreadsheets. The Covid-19 pandemic exposed the structural fragility of this model — and accelerated a digital transformation that is now irreversible. Today, CQC's Single Assessment Framework explicitly rewards evidenced, real-time care documentation. NHSX's Digital Social Care Record (DSCR) programme has set a clear direction: digital-first care delivery is no longer optional.</p>
+            
+            <h3>What HealthTech Actually Means in a Care Context</h3>
+            <p>HealthTech in social care is more than electronic medication records. It is the convergence of mobile-first care logging, electronic MAR (eMAR), GP Connect integration, compliance dashboards, real-time incident management, and family engagement platforms into a unified operational ecosystem. For a care home manager, this means no more chasing paper files at 2am during a CQC inspection. For a frontline carer, it means a task list, medication prompt, and care plan available on a mobile device — even without an internet connection.</p>
+            
+            <h3>The Offline-First Imperative</h3>
+            <p>One dimension of HealthTech that is frequently underestimated is offline capability. Care homes are not data centres. Wi-Fi dead zones, mobile signal dropout, and connectivity gaps are real operational realities — particularly in older building stock. Purpose-built care technology must be designed to work offline as the default, syncing to the cloud when connection is restored. This is not a nice-to-have feature. It is table stakes for any serious care platform deployed in a residential care environment.</p>
+            
+            <h3>Regulation as a Technology Driver</h3>
+            <p>The NHS Data Security and Protection Toolkit (DSPT), NHS Digital's DSCR Dynamic Purchasing System (DPS), and the Care Act 2014 collectively define the regulatory envelope within which HealthTech must operate in the UK. Platforms that meet DSPT standards, support UK GDPR compliance, and align with CQC inspection evidence requirements are not just compliant — they are the only viable option for NHS-adjacent care providers. Compliance, in this context, is a design principle, not an afterthought.</p>
+            
+            <h3>MHINO's Position</h3>
+            <p>MHINO FinCareOS is built from this understanding. Every care event captured in the platform — a medication administered, a visit completed, a clinical observation logged — feeds simultaneously into compliance records, billing calculations, and family visibility. No competitor currently offers this unified data flow. The result is a platform where doing the care work is the same act as producing the compliance evidence, the billing record, and the family update. That is what purpose-built HealthTech looks like.</p>
+            
+            <p>The digital transformation of UK social care is not coming—it is already here. Organizations that embrace this shift with a clear understanding of both opportunities and operational realities will lead the sector forward.</p>
+            
+            <div style="text-align: center; margin-top: 40px;">
+                <button onclick="downloadBlogAsPDF()" class="btn btn-secondary" style="padding: 15px 40px; font-size: 16px; margin-right: 15px;">
+                    <i class="fas fa-download"></i> Download PDF
+                </button>
+                <a href="contact.html" class="btn btn-primary" style="padding: 15px 40px; font-size: 16px;">Get in Touch</a>
+            </div>
+        `
+    },
+    {
+        id: 9,
+        title: "FinTech Comes to Care: Why the UK's £20 Billion Care Finance Problem Needs a Fintech Solution",
+        excerpt: "Care providers in the UK spend up to 95% of their finance team's time manually reconciling council payments. Discover how FinTech-grade automation is solving the UK's £20 billion care finance challenge through split billing and real-time reconciliation...",
+        image: "assets/img/blog/blog9.png",
+        author: "Admin",
+        authorImage: "assets/img/blog/no-profile.svg",
+        slug: "fintech-care-uk-care-finance-solution",
+        category: "FinTech",
+        tags: ["FinTech", "Care Finance", "Payment Reconciliation", "Automation", "MHINO"],
+        featured: true,
+        introduction: "Care providers in the UK spend up to 95% of their finance team's time manually reconciling council payments. FinTech-grade automation is the only credible answer to the £20 billion care finance problem. This article explores why traditional accounting software fails to address the unique complexity of social care payments.",
+        fullContent: `
+            <h3>The Hidden Finance Crisis in UK Care</h3>
+            <p>Behind every care home's clinical operation is a financial operation of considerable complexity. A single resident may be funded by a Local Authority block contract, a Direct Payment, a family top-up, and a personal health budget — all at different rates, on different payment schedules, with different billing codes. Multiply this by 40, 60, or 100 residents. The result is a reconciliation challenge that generic accounting software was never designed to solve.</p>
+            
+            <h3>The Manual Reconciliation Trap</h3>
+            <p>Research across the UK care sector consistently finds that finance teams spend the majority of their working week manually matching LA remittance files against care delivery logs, chasing discrepancies, and re-entering data between care systems and accounting platforms. This is not a workflow problem that can be fixed with better spreadsheets. It is a systemic infrastructure gap — and it costs the sector both money and time that should be directed at care delivery.</p>
+            
+            <h3>What FinTech Principles Bring to Care Finance</h3>
+            <p>The FinTech industry has spent 15 years solving payment reconciliation, split billing, and ledger automation at scale. Open banking APIs, rule-based matching engines, real-time payment status tracking, and audit-trail ledgers are standard infrastructure in financial services. Applying these same principles to care finance — where payments are complex, schedules are variable, and audit requirements are stringent — is the logical next step. It is also where the care technology market currently has its largest gap.</p>
+            
+            <h3>Split Billing as the Core Complexity</h3>
+            <p>The defining financial challenge unique to UK social care is split billing: a single resident funded by multiple payers, each with their own contractual rate, billing schedule, and payment reference system. LA rates are negotiated per contract. Private top-up rates vary by room and service tier. Direct Payments follow their own schedule. A care finance platform must hold all of these simultaneously, track actual care delivered against contracted care, and reconcile incoming payments against each funding stream in real time.</p>
+            
+            <h3>MHINO's Financial Architecture</h3>
+            <p>MHINO FinCareOS is built around a FinTech-grade reconciliation engine as the core product, not a bolt-on feature. LA remittance files are uploaded and automatically matched against care delivery logs by NHS Number, service date, and tariff code. Exceptions are flagged for human review. The Payroll Bridge exports approved care hours directly to Xero or QuickBooks. Every financial transaction maintains a full audit trail. This is care finance built the way banking infrastructure works — and it is the first platform in the UK care sector to operate this way.</p>
+            
+            <p>The UK care sector faces a critical choice: continue wrestling with manual reconciliation, or embrace FinTech-grade automation that transforms finance from a compliance burden into a strategic operational advantage.</p>
+            
+            <div style="text-align: center; margin-top: 40px;">
+                <button onclick="downloadBlogAsPDF()" class="btn btn-secondary" style="padding: 15px 40px; font-size: 16px; margin-right: 15px;">
+                    <i class="fas fa-download"></i> Download PDF
+                </button>
+                <a href="contact.html" class="btn btn-primary" style="padding: 15px 40px; font-size: 16px;">Get in Touch</a>
+            </div>
+        `
+    },
+    {
+        id: 10,
+        title: "AI in Healthcare: Moving Beyond the Hype to Where It Actually Creates Value in Social Care",
+        excerpt: "Artificial intelligence in healthcare generates more headlines than implementations. Explore where AI is genuinely useful in social care operations today, from LLM-assisted documentation to predictive risk scoring and anomaly detection in care finance...",
+        image: "assets/img/blog/blog10.png",
+        author: "Admin",
+        authorImage: "assets/img/blog/no-profile.svg",
+        slug: "ai-healthcare-value-social-care",
+        category: "AI & Healthcare",
+        tags: ["AI", "Healthcare", "Machine Learning", "Social Care", "Automation"],
+        featured: true,
+        introduction: "Artificial intelligence in healthcare generates more headlines than implementations. This article focuses on where AI is genuinely useful in social care operations today — and what comes next. Rather than discussing imaging diagnosis and drug discovery, we explore practical AI applications that directly address the operational pressures facing care home managers.",
+        fullContent: `
+            <h3>The AI Promise vs. the Care Home Reality</h3>
+            <p>Discussions of AI in healthcare often centre on imaging diagnosis, drug discovery, and predictive genomics — technologies that are real but distant from the operational pressures facing a care home manager on a Tuesday morning. The more immediate question is: what can AI do right now, in a practical care environment, to reduce administrative burden, improve compliance, and support better outcomes for residents? The answer is more grounded — and more immediately useful — than most coverage suggests.</p>
+            
+            <h3>LLM-Assisted Care Documentation</h3>
+            <p>Frontline carers spend a disproportionate amount of their time on documentation. Shift notes, handover records, incident reports, and care plan updates collectively consume hours that could be directed at direct care. Large Language Models (LLMs), used appropriately, can act as documentation assistants — converting a carer's spoken or typed summary into a structured, CQC-compliant care note. This does not replace the carer's judgment; it reduces the friction between delivering care and recording it. The clinical content remains the carer's; the structure, formatting, and completeness checking is automated.</p>
+            
+            <h3>Anomaly Detection in LA Reconciliation</h3>
+            <p>Payment reconciliation in care finance is a pattern-matching problem. Most LA payments follow predictable schedules and amounts for a given contract and service period. When a payment is late, short, or references an unexpected code, that is an anomaly. Machine learning models trained on a care provider's payment history can flag these exceptions automatically — surfacing the three discrepancies in 400 transactions that a human finance officer might miss in a Friday afternoon spreadsheet review. This is AI doing what it does best: high-volume pattern recognition against a defined baseline.</p>
+            
+            <h3>Risk Scoring and Predictive Care</h3>
+            <p>Care risk assessment is currently a point-in-time activity: a nurse or manager reviews a resident's condition and updates their risk profile periodically. Continuous monitoring data — medication adherence, mobility logs, sleep patterns, food intake records — could, with appropriate AI modelling, generate a dynamic risk score that flags deteriorating residents before a crisis event occurs. This is not a near-future aspiration; early implementations exist in specialist NHS settings. The pathway from care operations data to predictive risk scoring depends on consistently structured data collection — which is why how care is documented today directly determines what AI can do with it tomorrow.</p>
+            
+            <h3>Building for AI Readiness</h3>
+            <p>The organisations that will benefit most from AI in care are those generating clean, structured, timestamped data from care operations today. A medication administration logged with a timestamp, a visit completed with a GPS check-in, a payment reconciled against a delivery record — each is a data point in a growing operational dataset, and the quality of that dataset is what ultimately determines whether any AI model built on top of it is useful or simply noise. AI automation, in that sense, is not a separate product to bolt on later. It is the natural evolution of a well-structured operational data foundation, and providers who neglect that foundation now will find themselves unable to take advantage of AI capability later, however good the model.</p>
+            
+            <h3>Where MHINO Fits</h3>
+            <p>We built MHINO FinCareOS around this principle from day one. Every care event — a medication administered, a visit completed, an LA payment reconciled — is captured as a structured, timestamped record in an event-sourced architecture, designed specifically to support the kind of retrospective and real-time analysis that AI features eventually depend on. We are not claiming to have solved predictive care AI; we are claiming to have built the data foundation that makes it possible when the time comes, which in our view is the harder and more important problem to get right first.</p>
+            
+            <p>The future of care will be powered by AI, but only for organizations that have invested in clean, structured operational data today.</p>
+            
+            <div style="text-align: center; margin-top: 40px;">
+                <button onclick="downloadBlogAsPDF()" class="btn btn-secondary" style="padding: 15px 40px; font-size: 16px; margin-right: 15px;">
+                    <i class="fas fa-download"></i> Download PDF
+                </button>
+                <a href="contact.html" class="btn btn-primary" style="padding: 15px 40px; font-size: 16px;">Get in Touch</a>
+            </div>
+        `
+    },
+    {
+        id: 11,
+        title: "CQC Inspection Readiness in the Digital Age: What Good Evidence Actually Looks Like",
+        excerpt: "CQC's Single Assessment Framework rewards evidence, not effort. Discover how many care homes work harder than ever to prepare for inspection but still fall short — because the evidence they're producing isn't the evidence the framework is actually looking for...",
+        image: "assets/img/blog/blog11.png",
+        author: "Admin",
+        authorImage: "assets/img/blog/no-profile.svg",
+        slug: "cqc-inspection-readiness-digital-age-evidence",
+        category: "Compliance",
+        tags: ["CQC", "Inspection Readiness", "Compliance", "Digital Evidence", "Quality Framework"],
+        featured: true,
+        introduction: "CQC's Single Assessment Framework rewards evidence, not effort. Many care homes are working harder than ever to prepare for inspection and still falling short — because the evidence they're producing isn't the evidence the framework is actually looking for.",
+        fullContent: `
+            <h3>Why Inspection Readiness Has Changed</h3>
+            <p>The Single Assessment Framework, introduced by CQC to standardise how quality is assessed across health and social care, evaluates providers against 34 Quality Statements grouped under five key questions: Safe, Effective, Caring, Responsive, and Well-led. The framework places a heavy emphasis on evidence — not policy documents that describe what a provider intends to do, but demonstrable records of what actually happened in day-to-day care delivery. This is a meaningful shift from older inspection models that placed more weight on documented policy and less on continuous evidence of practice.</p>
+            
+            <h3>The Gap Between Effort and Evidence</h3>
+            <p>Many care homes invest considerable effort in inspection preparation: reviewing files, updating care plans, briefing staff. Yet that effort doesn't always translate into the kind of evidence CQC inspectors are now looking for, because much of it is retrospective — work done in the days before an inspection to reconstruct a picture of good practice, rather than a continuous record generated as care was actually delivered. Inspectors are trained to distinguish between the two. A care plan updated the week before inspection reads differently to a care plan with a continuous, dated history of incremental updates reflecting genuine ongoing review.</p>
+            
+            <h3>What 'Good Evidence' Actually Means Under the Framework</h3>
+            <p>Good evidence under the Single Assessment Framework has a few consistent characteristics:</p>
+            <ul>
+                <li><strong>Contemporaneous:</strong> It was recorded at or near the time the care event happened rather than reconstructed afterward</li>
+                <li><strong>Specific:</strong> It names the resident, the carer, the time, and the action rather than describing care in generic terms</li>
+                <li><strong>Traceable:</strong> An inspector can follow a single resident's care journey across multiple quality statements without hitting gaps or inconsistencies between different records</li>
+            </ul>
+            <p>Paper-based systems struggle to produce this kind of evidence consistently, simply because paper doesn't enforce when an entry was made or cross-reference itself against other records automatically.</p>
+            
+            <h3>Where Most Providers Lose Points Without Realising It</h3>
+            <p>In practice, much of the evidence gap is not about the quality of care being delivered — it's about the quality of the record of that care. Consider these common scenarios:</p>
+            <ul>
+                <li>A medication round completed correctly but logged inconsistently</li>
+                <li>A safeguarding concern raised verbally but not formally documented within the expected timeframe</li>
+                <li>A care plan review that happened but wasn't dated and signed at the point of review</li>
+            </ul>
+            <p>These are not failures of care, but they are failures of evidence, and the Single Assessment Framework scores evidence. This is the single most common and most avoidable source of lost points in CQC inspections today.</p>
+            
+            <h3>The Shift Toward Continuous, Digital Evidence</h3>
+            <p>The structural answer to this problem is moving evidence generation away from a pre-inspection scramble and into the normal flow of daily care delivery. When every medication administration, every visit, every incident, and every care plan update is logged digitally at the point it happens — with a timestamp, an identified carer, and a structured format — the evidence base for an inspection exists continuously rather than needing to be assembled under time pressure.</p>
+            
+            <p>This also has a secondary benefit that is easy to overlook: it gives managers real-time visibility into where evidence gaps exist long before an inspector ever asks for them, turning inspection readiness from an annual fire drill into an ongoing operational state.</p>
+            
+            <h3>Where MHINO Fits</h3>
+            <p>This is the exact problem MHINO's CQC Evidence Mapper was built to solve. It maps every one of the 34 Quality Statements under the Single Assessment Framework directly to the structured care events already being captured in the platform — medication logs, visit records, incident reports, care plan updates — so that the evidence an inspector asks for already exists in the right format, generated as a byproduct of normal operations rather than produced under pressure the week before inspection.</p>
+            
+            <p>We believe this is the only sustainable way to approach inspection readiness at scale, because it removes the gap between delivering good care and being able to prove it. The future of inspection readiness is not harder work the week before inspection—it's continuous evidence generation as part of normal operations.</p>
             
             <div style="text-align: center; margin-top: 40px;">
                 <button onclick="downloadBlogAsPDF()" class="btn btn-secondary" style="padding: 15px 40px; font-size: 16px; margin-right: 15px;">
