@@ -7853,7 +7853,7 @@ Print Styles for PDF Download
 
     /* Add company header for print */
     .blog-details::before {
-        content: "Backyard Technology Limited";
+        content: "Backyard Technologies Limited";
         display: block;
         text-align: center;
         font-size: 24pt;
@@ -7866,7 +7866,7 @@ Print Styles for PDF Download
 
     /* Add watermark */
     body::after {
-        content: "BACKYARD TECHNOLOGY LIMITED";
+        content: "Backyard Technologies LIMITED";
         position: fixed;
         top: 50%;
         left: 50%;
@@ -7908,7 +7908,7 @@ Print Styles for PDF Download
 
     /* Footer with contact info */
     #blog-post-content::after {
-        content: "\A\A Contact Backyard Technology Limited\A\AWebsite: www.backyardtech.co.uk\AEmail: contact@backyardtech.co.uk\APhone: +44 7769 750055\AAddress: 1 George Williams Way, Colchester CO1 2JS, UK\A\A© 2026 Backyard Technology Limited. All rights reserved.";
+        content: "\A\A Contact Backyard Technologies Limited\A\AWebsite: www.backyardtech.co.uk\AEmail: contact@backyardtech.co.uk\APhone: +44 7769 750055\AAddress: 1 George Williams Way, Colchester CO1 2JS, UK\A\A© 2026 Backyard Technologies Limited. All rights reserved.";
         display: block;
         white-space: pre-wrap;
         margin-top: 50px;

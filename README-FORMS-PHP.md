@@ -219,4 +219,4 @@ For issues or questions:
 
 ## License
 
-Proprietary - Backyard Technology Limited
+Proprietary - Backyard Technologies Limited
