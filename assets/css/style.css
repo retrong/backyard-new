@@ -893,7 +893,15 @@ Main Banner Area CSS
   z-index: 3;
   top: 250px;
 }
-.main-banner-content h1 {
+.main-banner-content .hero-eyebrow {
+  color: #ffffff;
+  opacity: 0.75;
+  margin-bottom: 10px;
+  font-size: 16px;
+  font-weight: 600;
+  letter-spacing: 0.5px;
+}
+.main-banner-content h3 {
   color: #ffffff;
   margin-bottom: 0;
   font-size: 79px;
@@ -1233,7 +1241,7 @@ Government Services Area CSS
   border-top-right-radius: 10px;
 }
 
-.featured-government-area .single-gov-box .icon-letter h1 {
+.featured-government-area .single-gov-box .icon-letter span {
   margin-bottom: 0;
   font-size: 62px;
   font-weight: 700;
@@ -2975,6 +2983,7 @@ Page Title Area CSS
   animation-timing-function: linear;
 }
 
+.page-title-content h1,
 .page-title-content h2 {
   margin-bottom: 0;
   color: #ffffff;
@@ -7962,4 +7971,39 @@ Print Styles for PDF Download
         background-color: #f5f5f5;
         padding: 2pt;
     }
+}
+
+
+/* built for local government  */
+
+.single-la-box {
+  margin-bottom: 30px;
+  position: relative;
+  padding: 8px;
+  background-color: #ffffff;
+  border-radius: 8px;
+  border: 2px solid #e0e0e0;
+  text-align: center;
+  transition: 0.5s;
+  overflow: hidden;
+  height: fit-content;
+  color: #333333;
+  width: 100%;
+}
+
+.single-la-box .content h3 {
+  font-size: 22px;
+  font-weight: 700;
+  margin-bottom: 15px;
+}
+
+.single-la-box .icon {
+  display: inline-block;
+  width: 60px;
+  height: 60px;
+  line-height: 60px;
+  text-align: center;
+  font-size: 30px;
+  border-radius: 50px;
+  margin-bottom: 20px;
 }

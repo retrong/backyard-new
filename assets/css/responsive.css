@@ -41,7 +41,7 @@
     top: 0;
     text-align: center;
   }
-  .main-banner-content h1 {
+  .main-banner-content h3 {
     font-size: 40px;
   }
   .main-banner-content p {
@@ -379,6 +379,7 @@
     padding-top: 178px;
     padding-bottom: 110px;
   }
+  .page-title-content h1,
   .page-title-content h2 {
     font-size: 28px;
     line-height: 1.4;
@@ -1032,7 +1033,7 @@
   .main-banner-content {
     top: 0;
   }
-  .main-banner-content h1 {
+  .main-banner-content h3 {
     margin-top: 0;
     font-size: 50px;
   }
@@ -1197,6 +1198,7 @@
     padding-top: 188px;
     padding-bottom: 120px;
   }
+  .page-title-content h1,
   .page-title-content h2 {
     font-size: 35px;
   }
@@ -1476,7 +1478,7 @@
     padding-left: 40px;
     padding-right: 40px;
   }
-  .main-banner-content h1 {
+  .main-banner-content h3 {
     font-size: 71px;
   }
   .main-banner-image {
@@ -1602,7 +1604,7 @@
     padding-left: 30px;
     padding-right: 30px;
   }
-  .main-banner-content h1 {
+  .main-banner-content h3 {
     font-size: 71px;
   }
 }
