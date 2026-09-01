@@ -7979,8 +7979,8 @@ Print Styles for PDF Download
 .single-la-box {
   margin-bottom: 30px;
   position: relative;
-  padding: 8px;
-  background-color: #ffffff;
+  padding: 12px 8px;
+  background-color: #f0f5f5;
   border-radius: 8px;
   border: 2px solid #e0e0e0;
   text-align: center;
@@ -7989,6 +7989,11 @@ Print Styles for PDF Download
   height: fit-content;
   color: #333333;
   width: 100%;
+}
+
+.single-la-box:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
 }
 
 .single-la-box .content h3 {
