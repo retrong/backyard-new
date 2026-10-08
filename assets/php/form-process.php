@@ -226,7 +226,7 @@ function createInvestorFormEmail($data)
 <body>
     <div class="container">
         <div class="header">
-            <h2>New MHINO CareOS Enquiry</h2>
+            <h2>New MHINO FinCare Enquiry</h2>
         </div>
         <div class="content">
             <div class="field">
@@ -394,7 +394,7 @@ elseif ($isInvestorForm) {
 
     if (empty($errors)) {
         $emailTo = "partner@mhino.co.uk";
-        $subject = "MHINO CareOS Enquiry: " . $interestType . " - " . $name;
+        $subject = "MHINO FinCare Enquiry: " . $interestType . " - " . $name;
         $htmlBody = createInvestorFormEmail([
             'name' => $name,
             'email' => $email,

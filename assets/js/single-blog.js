@@ -60,7 +60,7 @@ const blogPostsFullContent = [
                 <li><strong>AI-Readiness Audits:</strong> Assessing your organization's preparedness for AI integration and developing transformation roadmaps aligned with clinical and business objectives.</li>
                 <li><strong>Compliance as a Service:</strong> Ensuring your HealthTech solutions meet all regulatory requirements including CQC standards, GDPR, and industry-specific regulations.</li>
                 <li><strong>Digital Transformation Strategy:</strong> Creating comprehensive strategies that modernize healthcare delivery while maintaining clinical quality and patient safety.</li>
-                <li><strong>MHINO CareOS:</strong> Our proprietary care management platform that integrates care coordination, personal health budgets, and outcome tracking in one secure, compliant system.</li>
+                <li><strong>MHINO FinCare:</strong> Our proprietary care management platform that integrates care coordination, personal health budgets, and outcome tracking in one secure, compliant system.</li>
             </ul>
             
             <h3>Real-World Impact: Success Stories</h3>
@@ -331,7 +331,7 @@ const blogPostsFullContent = [
             <p>We understand healthcare workflows, regulations, and terminology. Our system is designed specifically for PHBs and healthcare financial management, not adapted from generic financial software.</p>
             
             <h4>Integrated Care Management</h4>
-            <p>Virtual Wallet is part of MHINO CareOS, our comprehensive care management platform. This integration ensures financial management never operates in isolation from care delivery.</p>
+            <p>Virtual Wallet is part of MHINO FinCare, our comprehensive care management platform. This integration ensures financial management never operates in isolation from care delivery.</p>
             
             <h4>User-Centered Design</h4>
             <p>We've designed interfaces for diverse users—from elderly service users with limited digital literacy to busy care coordinators managing hundreds of budgets. Accessibility and usability are core design principles.</p>
@@ -367,7 +367,7 @@ const blogPostsFullContent = [
             
             <p>Contact Backyard Technologies Limited for a demonstration of MHINO Virtual Wallet and to discuss how it can empower your service users while simplifying your administrative burden.</p>
             
-            <p><em>Learn more about MHINO CareOS and our comprehensive healthcare technology solutions on our dedicated product page.</em></p>
+            <p><em>Learn more about MHINO FinCare and our comprehensive healthcare technology solutions on our dedicated product page.</em></p>
             
             <div style="text-align: center; margin-top: 40px; display: flex; flex-wrap: wrap; gap: 10px; justify-content: center;">
                 <button onclick="downloadBlogAsPDF()" class="btn btn-secondary" style="padding: 15px 40px; font-size: 16px;">
@@ -794,7 +794,7 @@ const blogPostsFullContent = [
                 <li><strong>Human Oversight:</strong> AI as decision support, not autonomous decision-making</li>
             </ul>
             
-            <h4>Integration with MHINO CareOS</h4>
+            <h4>Integration with MHINO FinCare</h4>
             <p>Our care management platform incorporates AI capabilities:</p>
             <ul>
                 <li><strong>Risk Stratification:</strong> Identifying patients who would benefit from intensive case management</li>
@@ -1075,7 +1075,7 @@ const blogPostsFullContent = [
             <h5>PCN 360</h5>
             <p>Primary Care Network management system supporting integrated care delivery, resource sharing, and performance monitoring across GP practices.</p>
             
-            <h5>MHINO CareOS</h5>
+            <h5>MHINO FinCare</h5>
             <p>Comprehensive care management platform for social care and healthcare services, including personal health budget management, care coordination, and outcome tracking.</p>
             
             <h4>Compliance as a Service</h4>
@@ -1327,7 +1327,7 @@ const blogPostsFullContent = [
                 <li>Designed in collaboration with care coordinators, commissioners, and budget holders</li>
                 <li>Incorporates best practices from successful PHB programs</li>
                 <li>Reflects NHS and social care terminology and processes</li>
-                <li>Integrated with MHINO CareOS comprehensive care management platform</li>
+                <li>Integrated with MHINO FinCare comprehensive care management platform</li>
             </ul>
             
             <h4>Compliance and Security</h4>
@@ -1447,7 +1447,7 @@ const blogPostsFullContent = [
             
             <p>Contact Backyard Technologies Limited to discuss how MHINO Virtual Wallet can transform PHB management for your Local Authority or ICB, empowering service users while reducing administrative burden and ensuring compliance.</p>
             
-            <p><em>Learn more about MHINO CareOS and our comprehensive healthcare and social care technology solutions.</em></p>
+            <p><em>Learn more about MHINO FinCare and our comprehensive healthcare and social care technology solutions.</em></p>
             
             <div style="text-align: center; margin-top: 40px; display: flex; flex-wrap: wrap; gap: 10px; justify-content: center;">
                 <button onclick="downloadBlogAsPDF()" class="btn btn-secondary" style="padding: 15px 40px; font-size: 16px;">
