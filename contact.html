@@ -261,7 +261,16 @@
 
                                     <div class="col-lg-6 col-md-6">
                                         <div class="form-group">
-                                            <input type="text" name="msg_subject" id="msg_subject" class="form-control" required data-error="Please enter your subject" placeholder="Subject">
+                                            <select name="msg_subject" id="msg_subject" class="form-control" required data-error="Please select a subject" aria-label="Subject">
+                                                <option value="" selected disabled>Select a subject</option>
+                                                <option value="AI Readiness Audit">AI Readiness Audit</option>
+                                                <option value="Compliance as a Service">Compliance as a Service</option>
+                                                <option value="Digital Transformation">Digital Transformation</option>
+                                                <option value="Government SaaS">Government SaaS</option>
+                                                <option value="MHINO CareOS">MHINO CareOS</option>
+                                                <option value="LaunchPad for SMEs">LaunchPad for SMEs</option>
+                                                <option value="General Enquiry">General Enquiry</option>
+                                            </select>
                                             <div class="help-block with-errors"></div>
                                         </div>
                                     </div>

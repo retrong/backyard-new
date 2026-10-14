@@ -4797,7 +4797,30 @@ Contact Area CSS
   padding-right: 15px;
 }
 .contact-form form select.form-control {
+  display: block;
+  width: 100%;
   line-height: 50px;
+  appearance: none;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+}
+.contact-form form .nice-select {
+  width: 100% !important;
+  float: none;
+  height: 50px;
+  line-height: 50px;
+  background-color: #ffffff;
+  border: none;
+  box-shadow: 0px 5px 28.5px 1.5px rgba(149, 152, 200, 0.2);
+  border-radius: 0;
+  text-align: left !important;
+}
+.contact-form form .nice-select .current {
+  line-height: 50px;
+  display: block;
+}
+.contact-form form .nice-select .list {
+  width: 100%;
 }
 .contact-form form input[type=file].form-control {
   height: auto;
